@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>edit photo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="3.14988057%" y1="-10.8506944%" x2="102.335042%" y2="109.103733%" id="linearGradient-1">
+            <stop stop-color="#2694E1" offset="0%"></stop>
+            <stop stop-color="#58A7D7" offset="100%"></stop>
+        </linearGradient>
+        <path d="M27.6801434,17.6715166 L32.155441,22.1686894 L20.8272268,33.5523815 L16.3544665,29.0552087 L27.6801434,17.6715166 Z M35.5513263,16.5869016 L33.5555158,14.5813169 C32.7842039,13.8062277 31.5317528,13.8062277 30.7578204,14.5813169 L28.8460335,16.5024665 L33.3213312,20.9996811 L35.5513263,18.7587649 C36.1495579,18.1575619 36.1495579,17.1880629 35.5513263,16.5869016 Z M14.0124537,35.3763471 C13.931009,35.7446848 14.2619456,36.0747341 14.6285299,35.9851577 L19.6154981,34.7700863 L15.1427378,30.2729134 L14.0124537,35.3763471 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08.3.-Ad-A-House-Step-4---Upload-Image" transform="translate(-709.000000, -584.000000)" fill-rule="nonzero">
+            <g id="Group-8-Copy-2" transform="translate(695.000000, 570.000000)">
+                <g id="edit-photo">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,135 @@
+.booking {
+	&__text1 {
+		font-size: 15px;
+		color: #122D47;
+	}
+	&__text2 {
+		font-size: 36px;
+		color: #122D47;
+	}
+	&__text3 {
+		font-size: 15px;
+		color: #425A71;
+	}
+	&__text4 {
+		font-size: 15px;
+        color: #2995E1;
+        font-weight: 600;
+	}
+	&__text5 {
+		font-size: 24px;
+		color: #122D47;
+	}
+	&__text6 {
+		font-size: 24px;
+        color: red;
+        font-weight: 600;
+	}
+    &__text7 {
+        font-size: 15px;
+        color: #9FAFBE;
+    }
+	&__line {
+        width: 1px;
+        height: 280px;
+        background: #C4D6E2;
+        top: 20px;
+        left: 32px;
+    }
+    &__step {
+    	display: flex;
+    	position: relative;
+    }
+    &__step-item-title{
+        font-size: 15px;
+        color: #9FAFBE;
+        margin-top: 7px;
+        margin-left: 15px;
+    }
+    &__step-item-circle {
+        width: 35px;
+        height: 35px;
+        background: #E6EDF2;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #425A71;
+        font-weight: 600;
+    }
+}
+.booking-active {
+    .booking__step-item-title{
+        color: #2995E1;
+    }
+    .booking__step-item-circle {
+		background-image: linear-gradient(-140deg, #2694E1 0%, #58A7D7 100%);
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+        color: #F6F6F6;
+    }
+}
+
+.booking-actived {
+    .booking__step-item-title{
+        color: #425A71;
+    }
+    .booking__step-item-circle {
+		background-image: linear-gradient(-140deg, #2694E1 0%, #58A7D7 100%);
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+        color: #F6F6F6;
+    }
+}
+
+//Calendar Style
+.booking__calendarRange {
+    .datepicker-inline {
+        width: 100% !important;
+    }
+    .table-condensed {
+        width: 100% !important;
+    }
+    .prev {
+    }
+    .next {
+    }
+    .datepicker-switch {
+        font-size: 20px;
+        color: #2C3135;
+        font-weight: 600;
+        height: 70px;
+    }
+    .day {
+        font-size: 15px;
+        color: #2C3135;
+        font-weight: 600;
+    }
+    tbody tr {
+        height: 35px;
+    }
+    .range-end,
+    .range-start {
+        display: inline-block;
+        width: 100%;
+    }
+    .selected.day {
+        height: 100% !important;
+        padding: 7px 0;
+        background: #2995E1;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .active.selected.day {
+        height: 100% !important;
+        padding: 7px 0;
+        background: #2995E1;
+        border-radius: 0px 20px 20px 0px;
+    }
+    .range {
+        background: #2995E1 !important;
+        color: white;
+    }
+    .datepicker td, .datepicker th {
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+    }
+}

@@ -1,0 +1,39 @@
+.form-control:focus {
+	border-color: #122D47;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.m-no-ui-slider-pick-price {
+    .noUi-horizontal {
+        height: 3px;
+    }
+    .noUi-target {
+        border: none;
+        border-radius: 10px;
+        background: #E2E2E2;
+    }
+    .noUi-connect {
+        background: #2995E1;
+    }
+    .noUi-horizontal .noUi-handle {
+        top: -9px;
+        width: 20px;
+        height: 20px;
+        &:focus {
+            outline: none;
+        }
+        cursor: pointer;
+    }
+    .noUi-handle {
+		border-radius: 50%;
+		border: 1px solid #2995E1;
+		background: #2995E1;
+		cursor: default;
+		box-shadow: 0 2px 8px 0 rgba(30,131,202,0.80);
+    }
+    .noUi-handle:after,
+    .noUi-handle:before {
+        display: none;
+    }
+}

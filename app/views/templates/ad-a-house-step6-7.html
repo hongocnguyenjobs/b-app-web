@@ -1,0 +1,160 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    <!-- Begin Add A House Step 6 -->
+    <section id="addAHouseStep6">
+        <div class="ad-a-house__step1-frame m-auto pt-5">
+            <p class="ad-a-house__text4 text-uppercase">Fix the cost</p>
+            <p class="ad-a-house__text1">What is the advertised area of your house?</p>
+            <div class="w-100 mt-2 mb-4 ad-a-house__noUi-Slider">
+                <div class="d-flex align-items-center mb-3">
+                    <label class="ad-a-house__text3">Area</label>
+                    <div class="ml-auto">
+                        <span class="text-center house__input-price" id="noUiSliderPickAreaValue"></span>
+                        <span class="ad-a-house__text3"> m<sup>2</sup></span>
+                    </div>
+                </div>
+                <div id="noUiSliderPickArea" class="w-100 mb-3"></div>
+            </div>
+            <p class="ad-a-house__text1">What is the monthly cost?</p>
+            <p class="ad-a-house__text3">We want to know address of your house, area for rent and some other additional information.</p>
+            <div class="d-flex align-items-start mb-3">
+                <label class="m-check-radio-blue align-items-start mr-5">
+                    <input class="m-check-radio-blue__input" checked type="radio" name="type" required>
+                    <span class="m-check-radio-blue__status mt-1"></span>
+                    <span class="ad-a-house__text3">
+                        <span>Price with built-in demand</span>
+                        <br>
+                        <span class="ad-a-house__text6">recommended</span>
+                    </span>
+                </label>
+                <label class="m-check-radio-blue">
+                    <input class="m-check-radio-blue__input" type="radio" name="type" required>
+                    <span class="m-check-radio-blue__status"></span>
+                    <span class="ad-a-house__text3">Fixed price</span>
+                </label>
+            </div>
+            <p class="ad-a-house__text1">Set the start price</p>
+            <p class="ad-a-house__text3">We want to know address of your house, area for rent and some other additional information.</p>
+            <div class="form-row">
+                <div class="col-4 mb-3">
+                    <div>
+                        <label class="ad-a-house__text3">Currency</label>
+                        <div class="">
+                            <select id="currency_selector">
+                                <option value="currency_usd">USD</option>
+                                <option value="currency_euro">EURO</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div id="currency_usd" class="col-8 ad-a-house__currency-content">
+                    <div class="w-100 mt-2 mb-4 ad-a-house__noUi-Slider">
+                        <div class="d-flex align-items-center mb-3">
+                            <label class="ad-a-house__text3">Price</label>
+                            <div class="ml-auto">
+                                <span class="house__money-price">$</span>
+                                <span class="text-center house__input-price" id="noUiSliderPickPriceValue"></span>
+                            </div>
+                        </div>
+                        <div id="noUiSliderPickAdAHousePrice" class="w-100 mb-3"></div>
+                    </div>
+                </div>
+                <div id="currency_euro" class="col-8 ad-a-house__currency-content" style="display: none;">
+                    <div class="w-100 mt-2 mb-4 ad-a-house__noUi-Slider">
+                        <div class="d-flex align-items-center mb-3">
+                            <label class="ad-a-house__text3">Price</label>
+                            <div class="ml-auto">
+                                <span class="text-center house__input-price" id="noUiSliderPickPriceEuroValue"></span>
+                                <span class="house__money-price">€</span>
+                            </div>
+                        </div>
+                        <div id="noUiSliderPickAdAHousePriceEuro" class="w-100 mb-3"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#addAHouseStep7" class="m-btn2 m-btn-confirm1 btn-block text-center" onclick="showStep7()">Continue</a>
+            <a href="" class="btn-block text-center ad-a-house__link1 my-5">Save and exit</a>
+        </div>
+        <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+    </section>
+    <!-- End Add A House Step 6 -->
+
+    <!-- Begin Add A House Step 7 -->
+    <section id="addAHouseStep7">
+        <div class="ad-a-house__step1-frame m-auto pt-5">
+            <p class="ad-a-house__text4 text-uppercase">Fix the cost</p>
+            <p class="ad-a-house__text1">Notice of rent</p>
+            <p class="ad-a-house__text3">How far in advance should customers be able to book your place?</p>
+            <div class="form-row">
+                <div class="col-4">
+                    <div>
+                        <label class="ad-a-house__text3">Time</label>
+                        <div class="">
+                            <select>
+                                <option value="0">10:00</option>
+                                <option value="1">11:00</option>
+                                <option value="2">12:00</option>
+                                <option value="2">13:00</option>
+                                <option value="2">14:00</option>
+                                <option value="2">15:00</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 d-flex align-items-end">
+                    <label class="d-flex align-items-center mb-3">
+                        <input class="d-none account__item-checkbox" type="checkbox">
+                        <div class="account__item-status"></div>
+                        <div class="ml-2">
+                            <span class="ad-a-house__text3">Allow notifications to show</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <p class="ad-a-house__text1">Calendar</p>
+            <p class="ad-a-house__text3">Click to book a day in the calendar</p>
+            <div class="ad-a-house__calendar">
+                <div class="mb-3">
+                    <input class="d-none" type="text" id="datetimepicker12" placeholder="Please select Date Time" data-input>
+                </div>
+                <div>
+                    <input class="d-none" type="text" id="datetimepicker13" placeholder="Please select Date Time" data-input>
+                </div>
+            </div>
+            <a href="ad-a-house--done-fix-the-cost.html" class="m-btn2 m-btn-confirm1 btn-block text-center mt-4">Finish</a>
+            <a href="" class="btn-block text-center ad-a-house__link1 my-5">Save and exit</a>
+        </div>
+        <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+    </section>
+    <!-- End Add A House Step 7 -->
+</div>
+@include('../partials/foot.html')
+<script>
+    $('#addAHouseStep7').hide();
+    var link=window.location.href;
+    var getLinkIdStep = link.split("#")[1];
+    if(getLinkIdStep == "") {
+        $('section').hide();
+        $('#addAHouseStep6').show();
+    }
+    if(getLinkIdStep == "addAHouseStep7") {
+        $('section').hide();
+        $('#addAHouseStep7').show();
+    }
+    function showStep7() {
+        $('section').hide();
+        $('#addAHouseStep7').show();
+    }
+    flatpickr("#datetimepicker12", {
+        inline: true,
+        enableTime: true,
+        dateFormat: "Y-m-d H:i",
+        "locale": "ja",
+    });
+    flatpickr("#datetimepicker13", {
+        inline: true,
+        enableTime: true,
+        dateFormat: "Y-m-d H:i",
+        "locale": "ja",
+    });
+</script>

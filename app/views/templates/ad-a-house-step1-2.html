@@ -1,0 +1,177 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    <main class="m-height-screen">
+        <!-- Begin Add A House Step 1 -->
+        <section id="addAHouseStep1">
+            <div class="ad-a-house__step1-frame m-auto pt-5">
+                <p class="ad-a-house__text4 text-uppercase">Basic information about the house</p>
+                <p class="ad-a-house__text1">What type of accommodations are you offering?</p>
+                <form class="needs-validation" novalidate>
+                    <div>
+                        <label class="ad-a-house__text3">Type of house</label>
+                        <div class="m-border__valid">
+                            <select>
+                                <option value="0">Pending</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3">4</option>
+                                <option value="4">5</option>
+                            </select>
+                        </div>
+                        <div class="m-valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="m-invalid-feedback d-none">
+                            Please choose a type of house.
+                        </div>
+                    </div>
+                    <p class="ad-a-house__text1">Where is your house located</p>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label class="ad-a-house__text3">Country</label>
+                                <div class="m-border__valid">
+                                    <select>
+                                        <option value="0">Ukraine</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                        <option value="4">5</option>
+                                    </select>
+                                    <div class="m-valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="m-invalid-feedback d-none">
+                                        Please choose a type of house.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label class="ad-a-house__text3">City</label>
+                                <div class="m-border__invalid">
+                                    <select>
+                                        <option value="0">--Choose--</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                        <option value="4">5</option>
+                                    </select>
+                                    <div class="m-valid-feedback d-none">
+                                        Looks good!
+                                    </div>
+                                    <div class="m-invalid-feedback">
+                                        Please choose the City.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div>
+                                <label class="ad-a-house__text3">Street</label>
+                                <div class="m-border__invalid">
+                                    <select>
+                                        <option value="0">--Choose--</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                        <option value="4">5</option>
+                                    </select>
+                                    <div class="m-valid-feedback d-none">
+                                        Looks good!
+                                    </div>
+                                    <div class="m-invalid-feedback">
+                                        Please choose the City.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label class="ad-a-house__text3">Apartment number</label>
+                                <div class="m-border__invalid">
+                                    <select>
+                                        <option value="0">--Choose--</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                        <option value="4">5</option>
+                                    </select>
+                                    <div class="m-valid-feedback d-none">
+                                        Looks good!
+                                    </div>
+                                    <div class="m-invalid-feedback">
+                                        Please choose the City.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label class="ad-a-house__text3">Zipcode</label>
+                                <div class="m-border__invalid">
+                                    <select>
+                                        <option value="0">--Choose--</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                        <option value="4">5</option>
+                                    </select>
+                                    <div class="m-valid-feedback d-none">
+                                        Looks good!
+                                    </div>
+                                    <div class="m-invalid-feedback">
+                                        Please choose the City.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <a href="#addAHouseStep2" class="m-btn2 m-btn-confirm1 btn-block text-center" onclick="showStep2()">Continue</a>
+                <a href="" class="btn-block text-center ad-a-house__link1 my-5">Save and exit</a>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Add A House Step 1 -->
+
+        <!-- Begin Add A House Step 2 -->
+        <section id="addAHouseStep2">
+            <div class="ad-a-house__step1-frame m-auto pt-5">
+                <p class="ad-a-house__text4 text-uppercase">Basic information about the house</p>
+                <p class="ad-a-house__text1">Specify desired location</p>
+            </div>
+            <div class="ad-a-house__map mx-auto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.6630024081614!2d108.22190541533423!3d16.031049044717015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219efc3e3a283%3A0x92327dfe9c1e707e!2zVOG6p25nIDQsU-G7kSAyNSDEkMaw4budbmcgMiBUaMOhbmcgOSxI4bqjaSBDaMOidSzEkMOgIE7hurVuZywgMjUgMiBUaMOhbmcgOSwgSOG6o2kgQ2jDonUgRGlzdHJpY3QsIEjhuqNpIENow6J1LCBEYSBOYW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1525935789378"frameborder="0" class="w-100 h-100" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="ad-a-house__step1-frame m-auto pt-2">
+                <p class="ad-a-house__text5 mt-3">
+                    <b class="ad-a-house__text3">Location:</b> 71 Theron Forge Apt. 386
+                </p>
+                <a href="ad-a-house--done-confirm-basic-information.html" class="m-btn2 m-btn-confirm1 btn-block text-center mt-4">Finish confirm</a>
+                <a href="" class="btn-block text-center ad-a-house__link1 my-5">Save and exit</a>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Add A House Step 2 -->
+    </main>
+</div>
+@include('../partials/foot.html')
+<script>
+    $('#addAHouseStep2').hide();
+    var link=window.location.href;
+    var getLinkIdStep = link.split("#")[1];
+    if(getLinkIdStep == "") {
+        $('section').hide();
+        $('#addAHouseStep1').show();
+    }
+    if(getLinkIdStep == "addAHouseStep2") {
+        $('section').hide();
+        $('#addAHouseStep2').show();
+    }
+    function showStep2() {
+        $('section').hide();
+        $('#addAHouseStep2').show();
+    }
+</script>

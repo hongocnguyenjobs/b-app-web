@@ -1,0 +1,218 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    <main class="m-height-screen">
+        <!-- Begin Add A House Step 3 -->
+        <section id="addAHouseStep3">
+            <div class="ad-a-house__step1-frame m-auto pt-5">
+                <p class="ad-a-house__text4 text-uppercase">Add photos and description</p>
+                <p class="ad-a-house__text1">Ready to upload photos</p>
+                <p class="ad-a-house__text5 mt-3">
+                    Customers love photos. They want the ad to look exactly like the house they are booking. If you have time add the photos now.
+                </p>
+                <div class="row">
+                    <div class="col-4 mb-4">
+                        <div class="rounded position-relative ad-a-house__frame-upload-photos" style="background:url(images/img1.png) center center / cover">
+                            <a href=""><img class="rounded-circle ad-a-house__btn-remove-photos" src="images/ic-remove-image.svg"></a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="rounded position-relative ad-a-house__frame-upload-photos" style="background:url(images/img2.png) center center / cover">
+                            <a href=""><img class="rounded-circle ad-a-house__btn-remove-photos" src="images/ic-remove-image.svg"></a>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="rounded position-relative ad-a-house__frame-upload-photos" style="background:url(images/img3.png) center center / cover">
+                            <a href=""><img class="rounded-circle ad-a-house__btn-remove-photos" src="images/ic-remove-image.svg"></a>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="rounded position-relative ad-a-house__frame-upload-photos" style="background:url(images/img4.png) center center / cover">
+                            <a href=""><img class="rounded-circle ad-a-house__btn-remove-photos" src="images/ic-remove-image.svg"></a>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="rounded position-relative ad-a-house__frame-upload-photos" style="background:url(images/img5.png) center center / cover;">
+                            <a href=""><img class="rounded-circle ad-a-house__btn-remove-photos" src="images/ic-remove-image.svg"></a>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <a href="" class="rounded d-flex align-items-center justify-content-center ad-a-house__frame-upload-photos-btn" style="">
+                            <img class="m-auto" src="images/ic-add-images.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="ad-a-house__text5" for="ad-a-house-step3__textarea">Tell us about the house, its style and the neighbourhood</label>
+                    <textarea class="form-control pt-2 pl-3" id="ad-a-house-step3__textarea" rows="3" placeholder="Enter..."></textarea>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <a href="#addAHouseStep4" class="m-btn2 m-btn-cancel btn-block text-center" onclick="showStep4()">Skip</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#addAHouseStep4" class="m-btn2 m-btn-confirm1 btn-block text-center" onclick="showStep4()">Continue</a>
+                    </div>
+                </div>
+                <a href="" class="btn-block text-center ad-a-house__link1 my-5">Save and exit</a>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Add A House Step 3 -->
+
+        <!-- Begin Add A House Step 4 -->
+        <section id="addAHouseStep4">
+            <div class="ad-a-house__step1-frame m-auto pt-5">
+                <p class="ad-a-house__text4 text-uppercase">Add photos and description</p>
+                <p class="ad-a-house__text1">Add your profile photo</p>
+                <div class="ad-a-house__frame-profile-photo rounded-circle d-flex justify-content-center align-items-end mx-auto position-relative" style="background:url(images/ic-no-avatar.svg) bottom center / 285px 285px no-repeat #EDEFF2;">
+                    <label class="d-flex justify-content-center align-items-center position-absolute rounded-circle ad-a-house__frame-profile-photo--btn-upload">
+                        <input class="d-none" type="file">
+                        <img src="images/ic-take-photo.svg" width="26px" height="22px">
+                    </label>
+                </div>
+                <div class="form-group mt-5">
+                    <label class="ad-a-house__text5" for="ad-a-house-step3__textarea">Tell us about the you</label>
+                    <textarea class="form-control pt-2 pl-3" id="ad-a-house-step3__textarea" rows="4" placeholder="Enter..."></textarea>
+                </div>
+                <a href="#addAHouseStep5" class="m-btn2 m-btn-confirm1 btn-block text-center mt-4" onclick="showStep5()">Continue</a>
+                <a href="" class="btn-block text-center ad-a-house__link1 my-5">Save and exit</a>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Add A House Step 4 -->
+
+        <!-- Begin Add A House Step 5 -->
+        <section id="addAHouseStep5">
+            <div class="ad-a-house__step1-frame m-auto pt-5">
+                <p class="ad-a-house__text4 text-uppercase">Add photos and description</p>
+                <p class="ad-a-house__text1">Confirm your phone number</p>
+                <p class="ad-a-house__text5">Then your tenants will be able to contact you during their trip</p>
+                <label class="ad-a-house__text5">Phone number</label>
+                <div class="row mt-2">
+                    <div class="form-group col-12 col-sm-6 mb-0">
+                        <input class="form-control ad-a-house__input-text m-border__invalid" type="text" name="" placeholder="(+84) 0905111222">
+                        <div class="m-valid-feedback d-none">
+                            Looks good!
+                        </div>
+                        <div class="m-invalid-feedback">
+                            Please enter phone number
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 mt-2 mt-sm-0 px-0 text-center">
+                        <a href="#addAHouseStep5ReceiveCode" class="m-btn3 m-btn-confirm1 mx-auto" onclick="showStep5ReceiveCode()">Send Code</a>
+                    </div>
+                    <div class="col-12 col-sm-2 text-center px-0 pt-2">
+                        <a href="" class="ad-a-house__link2">Send Again</a>
+                    </div>
+                </div>
+                <a href="" class="btn-block text-center ad-a-house__link1 my-5">Save and exit</a>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Add A House Step 5 -->
+
+        <!-- Begin Add A House Step 5 Receive Code -->
+        <section id="addAHouseStep5ReceiveCode">
+            <div class="ad-a-house__step1-frame m-auto pt-5">
+                <p class="ad-a-house__text4 text-uppercase">Add photos and description</p>
+                <p class="ad-a-house__text1">Confirm your phone number</p>
+                <p class="ad-a-house__text5">Then your tenants will be able to contact you during their trip</p>
+                <label class="ad-a-house__text5">Phone number</label>
+                <div class="row mt-2">
+                    <div class="form-group col-12 col-sm-6 mb-0">
+                        <input class="form-control ad-a-house__input-text" type="text" name="" placeholder="(+84) 0905111222">
+                    </div>
+                    <div class="col-12 col-sm-4 mt-2 mt-sm-0 px-0 text-center">
+                        <a href="" class="m-btn3 m-btn-sent mx-auto">Sent</a>
+                    </div>
+                    <div class="col-12 col-sm-2 text-center px-0 pt-2">
+                        <a href="" class="ad-a-house__link3">Send Again</a>
+                    </div>
+                </div>
+                <p class="ad-a-house__text1 mt-4">Enter Code</p>
+                <p class="ad-a-house__text5">Your code was sent to your phone, please enter 4 digits</p>
+                <div class="form-row pr-0 pr-sm-5">
+                    <div class="col-3 px-2 px-sm-3">
+                        <input class="form-control ad-a-house__input-receive-code m-border__invalid" type="text" name="" maxlength="1">
+                        <div class="m-valid-feedback d-none">
+                            Looks good!
+                        </div>
+                        <div class="m-invalid-feedback">
+                            Please enter code
+                        </div>
+                    </div>
+                    <div class="col-3 px-2 px-sm-3">
+                        <input class="form-control ad-a-house__input-receive-code" type="text" name="" maxlength="1">
+                        <div class="m-valid-feedback d-none">
+                            Looks good!
+                        </div>
+                        <div class="m-invalid-feedback d-none">
+                            Please enter code
+                        </div>
+                    </div>
+                    <div class="col-3 px-2 px-sm-3">
+                        <input class="form-control ad-a-house__input-receive-code m-border__invalid" type="text" name="" maxlength="1">
+                        <div class="m-valid-feedback d-none">
+                            Looks good!
+                        </div>
+                        <div class="m-invalid-feedback">
+                            Please enter code
+                        </div>
+                    </div>
+                    <div class="col-3 px-2 px-sm-3">
+                        <input class="form-control ad-a-house__input-receive-code m-border__invalid" type="text" name="" maxlength="1">
+                        <div class="m-valid-feedback d-none">
+                            Looks good!
+                        </div>
+                        <div class="m-invalid-feedback">
+                            Please enter code
+                        </div>
+                    </div>
+                </div>
+                <a href="ad-a-house--done-add-photo.html" class="m-btn2 m-btn-confirm1 btn-block text-center mt-5">Finish confirm</a>
+                <a href="" class="btn-block text-center ad-a-house__link1 my-5">Save and exit</a>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Add A House Step 5 Receive Code -->
+    </main>
+</div>
+@include('../partials/foot.html')
+
+<script>
+    $('#addAHouseStep4').hide();
+    $('#addAHouseStep5').hide();
+    $('#addAHouseStep5ReceiveCode').hide();
+    var link=window.location.href;
+    var getLinkIdStep = link.split("#")[1];
+    if(getLinkIdStep == "") {
+        $('section').hide();
+        $('#addAHouseStep3').show();
+    }
+    if(getLinkIdStep == "addAHouseStep4") {
+        $('section').hide();
+        $('#addAHouseStep4').show();
+    }
+    if(getLinkIdStep == "addAHouseStep5") {
+        $('section').hide();
+        $('#addAHouseStep5').show();
+    }
+    if(getLinkIdStep == "addAHouseStep5ReceiveCode") {
+        $('section').hide();
+        $('#addAHouseStep5ReceiveCode').show();
+    }
+
+    function showStep4() {
+        $('section').hide();
+        $('#addAHouseStep4').show();
+    }
+    function showStep5() {
+        $('section').hide();
+        $('#addAHouseStep5').show();
+    }
+    function showStep5ReceiveCode() {
+        $('section').hide();
+        $('#addAHouseStep5ReceiveCode').show();
+    }
+</script>

@@ -1,0 +1,86 @@
+.preview {
+	&__frame-cover {
+		width: 100%;
+		height: 650px;
+		&-no-photo {
+			width: 100%;
+			height: 650px;
+			background-color: #EDEFF2;
+		}
+	}
+	&__text1 {
+		font-size: 15px;
+		color: #9FAFBE;
+	}
+	&__text2 {
+		font-size: 24px;
+		font-weight: 700;
+		color: #122D47;
+	}
+	&__text3 {
+		font-size: 18px;
+		font-weight: 700;
+		color: #122D47;
+	}
+	&__text4 {
+		font-size: 15px;
+		color: #425A71;
+	}
+	&__text5 {
+		font-size: 15px;
+		color: #122D47;
+	}
+	&__btn-heart {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	&__map {
+		width: 100%; 
+		height: 420px;
+	}
+	.preview__content-info1 {
+		padding-top: 1.5rem;
+	}
+	&__avatar {
+		&-box {
+			background: #FFFFFF; 
+			border: 1px solid #C4D6E2; 
+			box-shadow: 0 4px 12px 0 rgba(4,65,108,0.15); 
+			border-radius: 3px; position: absolute; 
+			top: -250px; 
+			right: 15px; 
+			width: 363px; 
+			height: 368px;
+		}
+		&-frame {
+			background: #EDEFF2; 
+			width: 200px; 
+			height: 200px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+    .preview__avatar-box {
+    	left: 0;
+    }
+    .preview__content-info1 {
+    	padding-top: 8.5rem;
+    }
+}
+
+// Checkbox style
+#preview__subscribe {
+  display: none;
+}
+.preview__subscribe {
+  background-image: url(../images/ic-heart-df.svg);
+  background-size: auto 100%;
+  width: 23px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+#preview__subscribe:checked + .preview__subscribe {
+  background-image: url(../images/ic-heart-df-checked.svg);
+}

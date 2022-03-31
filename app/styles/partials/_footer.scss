@@ -1,0 +1,12 @@
+.footer {
+	position: absolute;
+	left: 0;
+    bottom: 0;
+    height: 54px;
+    width: 100%;
+    overflow: hidden;
+    &__text {
+    	font-size: 15px;
+		color: #9FAFBE;
+    }
+}

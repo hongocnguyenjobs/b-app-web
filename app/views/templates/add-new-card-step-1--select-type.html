@@ -1,0 +1,126 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    <main class="m-height-screen">
+        <div class="ad-a-house__step1-frame m-auto pt-5">
+            <p class="ad-a-house__text4 text-uppercase">new card</p>
+            <p class="ad-a-house__text1">Add a new payment card</p>
+            <p class="ad-a-house__text3">Select type of your card</p>
+            <div class="m-border__invalid">
+                <select>
+                    <option value="0">Master Card</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                </select>
+                <div class="m-valid-feedback d-none">
+                    Looks good!
+                </div>
+                <div class="m-invalid-feedback">
+                    Please choose type of your card
+                </div>
+            </div>
+
+            <form class="needs-validation" novalidate>
+                <p class="ad-a-house__text1 mt-4">Add info</p>
+                <div class="add-new-card__add-info--frame w-100 p-4">
+                    <p class="ad-a-house__text3">Enter number of the payment card (date and time of expiration)</p>
+                    <div class="form-row">
+                        <div class="col-3 px-2">
+                            <input class="form-control add-new-card__input-number-card m-border__valid mb-1" type="text" name="" maxlength="1" required>
+                            <div class="m-valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="m-invalid-feedback d-none">
+                                Please provide a number of payment card
+                            </div>
+                        </div>
+                        <div class="col-3 px-2">
+                            <input class="form-control add-new-card__input-number-card m-border__valid mb-1" type="text" name="" maxlength="1" required>
+                            <div class="m-valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="m-invalid-feedback d-none">
+                                Please provide a number of payment card
+                            </div>
+                        </div>
+                        <div class="col-3 px-2">
+                            <input class="form-control add-new-card__input-number-card m-border__valid mb-1" type="text" name="" maxlength="1" required>
+                            <div class="m-valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="m-invalid-feedback d-none">
+                                Please provide a number of payment card
+                            </div>
+                        </div>
+                        <div class="col-3 px-2">
+                            <input class="form-control add-new-card__input-number-card m-border__invalid mb-1" type="text" name="" maxlength="1" required>
+                            <div class="m-valid-feedback d-none">
+                                Looks good!
+                            </div>
+                            <div class="m-invalid-feedback">
+                                Please provide a number of payment card
+                            </div>
+                        </div>
+                        <div class="col-6 mt-3 px-2">
+                            <div class="add-new-card__add-info-select m-border__valid">
+                                <select>
+                                    <option value="0">Select month</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">5</option>
+                                </select>
+                                <div class="m-valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="m-invalid-feedback d-none">
+                                    Please provide a number of payment card
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-3 px-2">
+                            <div class="add-new-card__add-info-select m-border__invalid">
+                                <select>
+                                    <option value="0">Select year</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">5</option>
+                                </select>
+                                <div class="m-valid-feedback d-none">
+                                    Looks good!
+                                </div>
+                                <div class="m-invalid-feedback">
+                                    Please provide a number of payment card
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-new-card__add-info--frame w-100 p-4 mt-3 position-relative">
+                    <div class="add-new-card__add-info--line1"></div>
+                    <div class="form-row mt-5">
+                        <div class="col-8">
+                        </div>
+                        <div class="col-4 mt-4">
+                            <div class="d-flex align-items-center">
+                                <span class="ad-a-house__text3 mr-3">CVV: </span>
+                                <input class="form-control" type="text" name="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="add-new-card__add-info--line2 mt-4"></div>
+                            <div class="add-new-card__add-info--line3 mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn m-btn-confirm1 btn-block mt-5">Add Card</button>
+                <!-- <a href="#" class="m-btn2 m-btn-confirm1 btn-block text-center mt-5">Add Card</a> -->
+            </form>
+        </div>
+
+        <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+    </main>
+</div>
+@include('../partials/foot.html')

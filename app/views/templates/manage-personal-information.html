@@ -1,0 +1,76 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    @include('../partials/header.html')
+    <main class="manage-user">
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-lg-4 col-xl-3">
+                    @include('../partials/manage-bar.html',{"a1":"m-active", "a2":"", "a3":"", "a4":"", "a5":""})
+                </div>
+                <div class="col-lg-7 col-xl-6 mt-2 bl-gray pl-lg-5">
+                    <p class="manage-user__title">Personal Information</p>
+                    <div class="manage-user__frame-profile-photo rounded-circle d-flex justify-content-center align-items-end mx-auto position-relative" style="background:url(images/img6.png) center center / cover">
+                        <label class="d-flex justify-content-center align-items-center position-absolute rounded-circle manage-user__frame-profile-photo--btn-upload">
+                            <input class="d-none" type="file">
+                            <img src="images/ic-edit-photo.svg" width="26px" height="22px">
+                        </label>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-group col-md-6 mb-0">
+                            <p class="manage-user__text">Name</p>
+                            <input class="form-control manage-user__input-text m-border__invalid" type="text" name="">
+                            <div class="m-valid-feedback d-none">
+                                Please enter your name
+                            </div>
+                            <div class="m-invalid-feedback">
+                                Please enter your name
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            <p class="manage-user__text">Last name</p>
+                            <input class="form-control manage-user__input-text m-border__valid" type="text" name="">
+                            <div class="m-valid-feedback">
+                                Look's good
+                            </div>
+                            <div class="m-invalid-feedback d-none">
+                                Please enter your last name
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            <p class="manage-user__text">Phone number</p>
+                            <input class="form-control manage-user__input-text" type="text" name="">
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            <p class="manage-user__text">Email</p>
+                            <input class="form-control manage-user__input-text" type="text" name="">
+                        </div>
+                        <div id="managePasswordControl" class="col-12 d-flex mt-3">
+                            <label class="m-check-box-blue mt-2">
+                                <input id="managePasswordCheck" class="m-check-box-blue__input" type="checkbox" name="gender">
+                                <span class="m-check-box-blue__status"></span>
+                            </label>
+                            <span class="manage-user__text ml-3">Change password</span>
+                        </div>
+                        <div id="managePassword" class="col-12">
+                            <div class="row">
+                                <div class="form-group col-md-6 mb-0">
+                                    <p class="manage-user__text">New password</p>
+                                    <input class="form-control manage-user__input-text" type="password" name="">
+                                </div>
+                                <div class="form-group col-md-6 mb-0">
+                                    <p class="manage-user__text">Confirm new password</p>
+                                    <input class="form-control manage-user__input-text" type="password" name="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center mb-4">
+                            <a href="" class="m-btn2 m-btn-confirm1 btn-block text-center mt-4">Save change</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @include('../partials/footer.html')
+</div>
+@include('../partials/foot.html')

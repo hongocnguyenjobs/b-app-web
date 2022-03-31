@@ -1,0 +1,75 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    <main class="account" style="background:url(images/bg.png) center center / cover">
+        <div class="m-mask-blue position-relative">
+            <div class="m-height-screen d-flex  justify-content-center">
+                <div class="container mt-4 pt-2">
+                    <div class="d-flex justify-content-between">
+                        <a href=""><img src="images/logo-small.png"alt=""></a>
+                        <a href=""><img src="images/close.svg" alt=""></a>
+                    </div>
+                    <div class="mx-0 mx-sm-3 mx-lg-5 my-5">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-5 pr-0 position__relative">
+                                <div class="account__line position-absolute">
+                                </div>
+                                <div class="account__step m-active">
+                                    <div class="account__step-item-circle rounded-circle">1</div>
+                                    <p class="account__step-item-title">Your information</p>
+                                </div>
+                                <div class="account__step">
+                                    <div class="account__step-item-circle rounded-circle">2</div>
+                                    <p class="account__step-item-title">Enable notifications</p>
+                                </div>
+                                <div class="account__step">
+                                    <div class="account__step-item-circle rounded-circle">3</div>
+                                    <p class="account__step-item-title">Before join</p>
+                                </div class="account__step">
+                                <div class="account__step">
+                                    <div class="account__step-item-circle rounded-circle">4</div>
+                                    <p class="account__step-item-title">What are you interested in? </p>
+                                </div>
+                                <div class="account__step">
+                                    <div class="account__step-item-circle rounded-circle">5</div>
+                                    <p class="account__step-item-title" >Type of ads</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 col-md-6">
+                                <p class="account__text-1 mb-1 text-uppercase">Create an account</p>
+                                <p class="account__title-2 mt-2 mb-4">Your information</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="account__text-2 mb-1">Name</p>
+                                        <input class="d-block w-100 account__text-3 mb-4" type="text">
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="account__text-2 mb-1">Surename</p>
+                                        <input class="d-block w-100 account__text-3 mb-4" type="text">
+                                    </div>
+                                </div>
+                                <p class="account__text-2 mb-1">Email</p>
+                                <input class="d-block w-100 account__text-3 mb-4" type="text">
+                                <p class="account__text-2 mb-1">Password</p>
+                                <div class="position-relative">
+                                    <input class="d-block w-100 account__text-3 mb-4" id="pass" type="password">
+                                    <button id="showPass" class="account__btn-pwd position-absolute"><img src="images/ic-show-pass.svg" alt=""></button>
+                                </div>
+                                <label class="d-flex align-items-center">
+                                    <input class="d-none account__item-checkbox" type="checkbox">
+                                    <div class="account__item-status"></div>
+                                    <div class="ml-2">
+                                        <span class="account__text-2">I want to receive notifications to my e-mail</span>
+                                    </div>
+                                </label>
+                                <div class="text-center">
+                                    <a href="" class="d-block m-btn m-btn-blue my-3">Next</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+@include('../partials/foot.html')

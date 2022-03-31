@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>not confirm</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="13.2.-Booking-Confirm-Detail" transform="translate(-973.000000, -499.000000)" fill="#C4D6E2" fill-rule="nonzero">
+            <path d="M985.5,499 C978.596767,499 973,504.596532 973,511.5 C973,518.403468 978.596767,524 985.5,524 C992.403995,524 998,518.403468 998,511.5 C998,504.596532 992.403761,499 985.5,499 Z M983.206989,517.921006 L977.702976,512.417228 L979.537491,510.582713 L983.206989,514.251977 L991.462509,505.996222 L993.297024,507.830736 L983.206989,517.921006 Z" id="not-confirm"></path>
+        </g>
+    </g>
+</svg>

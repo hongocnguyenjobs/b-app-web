@@ -1,0 +1,51 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    @include('../partials/header.html')
+    <main class="manage-user">
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-lg-4 col-xl-3">
+                    @include('../partials/manage-bar.html',{"a1":"", "a2":"", "a3":"m-active", "a4":"", "a5":""})
+                </div>
+                <div class="col-lg-7 col-xl-6 mt-2 pb-2 bl-gray pl-lg-5">
+                    <div class="d-flex justify-content-between align-items-center pb-4 mb-grey">
+                        <p class="manage-user__title mb-0">Valid payment cards</p>
+                        <div>
+                            <a href="" class="m-btn m-btn-confirm1">+ New card</a>
+                        </div>
+                    </div>
+                    <div class="mb-grey pt-3 d-flex justify-content-between">
+                        <span class="manage-user__text3">VISA</span>
+                        <div class="col-9 px-0 d-flex justify-content-between ">
+                            <p class="manage-user__text2">**** **** **** 5553</p>
+                            <a href="" class="manage-user__link">
+                                <img src="images/ic-detail.svg" alt="">
+                                <span class="ml-1">Detail</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mb-grey pt-3 d-flex justify-content-between">
+                        <span class="manage-user__text3">Master Card</span>
+                        <div class="col-9 px-0 d-flex justify-content-between ">
+                            <p class="manage-user__text2">**** **** **** 5553</p>
+                            <a href="" class="manage-user__link">
+                                <img src="images/ic-detail.svg" alt="">
+                                <span class="ml-1">Detail</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage-user__text">
+                        <p>Sed porttitor sodales quam nec euismod. Duis at leo ac nibh ullamcorper tincidunt sit amet vitae felis.
+                            Vivamus ullamcorper faucibus pulvinar. Aenean lorem quam, fringilla vel erat sit amet, volutpat rhoncus
+                                lectus. Integer vestibulum auctor leo eget dignissim.</p>
+                        <p>Nam egestas odio lectus, quis malesuada odio tempor ut. Maecenas suscipit feugiat pulvinar. Phasellus 
+                            consequat magna a ullamcorper aliquet. Suspendisse facilisis est ipsum, ut scelerisque lacus volutpat at
+                            . Vestibulum maximus porta risus, ac scelerisque arcu consectetur quis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @include('../partials/footer.html')
+</div>
+@include('../partials/foot.html')

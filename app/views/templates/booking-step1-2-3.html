@@ -1,0 +1,433 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    <main class="m-height-screen d-flex justify-content-center">
+                <!-- Begin Booking Step 1 -->
+        <section id="bookingStep1" class="w-100">
+            <div class="container mt-4 pt-2">
+                <div class="mx-0 mx-sm-3 mx-lg-5 my-5">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-3 pr-0 position__relative">
+                            <div class="booking__line position-absolute">
+                            </div>
+                            <div class="booking__step booking-active">
+                                <div class="booking__step-item-circle rounded-circle">1</div>
+                                <p class="booking__step-item-title">Time booking</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">2</div>
+                                <p class="booking__step-item-title">Confirm phone number</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">3</div>
+                                <p class="booking__step-item-title">Confirm email</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">4</div>
+                                <p class="booking__step-item-title">Payment method</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">5</div>
+                                <p class="booking__step-item-title" >Review booking</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p class="booking__text1 text-uppercase">Book a house</p>
+                            <p class="booking__text2">The time you want to book</p>
+                            <div class="d-flex flex-wrap align-items-center booking__text3">
+                                <p class="mb-2 mr-4">Start day: <span class="booking__text4">17 April</span></p>
+                                <p class="mb-2 mr-4 mr-lg-0">End day: <span class="booking__text4">19 April</span></p>
+                                <p class="mb-2 ml-lg-auto">Total cost: <span class="booking__text5">$</span><span class="booking__text6">24</span></p>
+                            </div>
+                            <div class="range booking__calendarRange">
+                                <div class="range-start d-none"></div>
+                                <div class="range-end"></div>
+                            </div>
+                            <div class="m-invalid-feedback">
+                                Please enter time you want to book
+                            </div>
+                            <a href="#bookingStep1ConfirmDetail" class="m-btn2 m-btn-confirm1 btn-block text-center mt-3" onclick="showBookingStep1ConfirmDetail()">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Booking Step 1 -->
+
+        <!-- Begin Booking Step 1 Confirm Detail -->
+        <section id="bookingStep1ConfirmDetail" class="w-100">
+            <div class="container mt-4 pt-2">
+                <div class="mx-0 mx-lg-5 my-5">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-3 pr-0 position__relative">
+                            <div class="booking__line position-absolute">
+                            </div>
+                            <div class="booking__step booking-active">
+                                <div class="booking__step-item-circle rounded-circle">1</div>
+                                <p class="booking__step-item-title">Time booking</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">2</div>
+                                <p class="booking__step-item-title">Confirm phone number</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">3</div>
+                                <p class="booking__step-item-title">Confirm email</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">4</div>
+                                <p class="booking__step-item-title">Payment method</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">5</div>
+                                <p class="booking__step-item-title" >Review booking</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p class="booking__text1 text-uppercase">Book a house</p>
+                            <p class="booking__text2">Prepare to book with Mark</p>
+                            <p class="booking__text3">Before booking, please confirm some details</p>
+                            <div class="mb-4">
+                                <div class="d-flex align-items-center py-4 border-top">
+                                    <a class="booking__text3 font-weight-bold" href="">Create an account</a>
+                                    <img class="ml-auto" src="images/ic-finish-confirm.svg" width="25px" height="25px">
+                                </div>
+                                <div class="d-flex align-items-center py-4 border-top">
+                                    <a class="booking__text3 font-weight-bold" href="">Add a photo to your profile</a>
+                                    <img class="ml-auto" src="images/ic-not-confirm.svg" width="25px" height="25px">
+                                </div>
+                                <div class="d-flex align-items-center py-4 border-top">
+                                    <a class="booking__text3 font-weight-bold" href="">Confirm contact details</a>
+                                    <img class="ml-auto" src="images/ic-not-confirm.svg" width="25px" height="25px">
+                                </div>
+                                <div class="d-flex align-items-center py-4 border-top border-bottom">
+                                    <a class="booking__text3 font-weight-bold" href="">ID confirmation</a>
+                                    <img class="ml-auto" src="images/ic-not-confirm.svg" width="25px" height="25px">
+                                </div>
+                            </div>
+                            <a href="#bookingStep2ConfirmPn" class="m-btn2 m-btn-confirm1 btn-block text-center" onclick="showBookingStep2ConfirmPn()">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Booking Step 1 Confirm Detail -->
+        
+        <!-- Begin Booking Step 2 Confirm pn -->
+        <section id="bookingStep2ConfirmPn" class="w-100">
+            <div class="container mt-4 pt-2">
+                <div class="mx-0 mx-sm-3 mx-lg-5 my-5">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-3 pr-0 position__relative">
+                            <div class="booking__line position-absolute">
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">1</div>
+                                <p class="booking__step-item-title">Time booking</p>
+                            </div>
+                            <div class="booking__step booking-active">
+                                <div class="booking__step-item-circle rounded-circle">2</div>
+                                <p class="booking__step-item-title">Confirm phone number</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">3</div>
+                                <p class="booking__step-item-title">Confirm email</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">4</div>
+                                <p class="booking__step-item-title">Payment method</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">5</div>
+                                <p class="booking__step-item-title" >Review booking</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p class="booking__text1 text-uppercase">Book a house</p>
+                            <p class="booking__text2">Confirm your phone number</p>
+                            <p class="booking__text3">Then your tenants will be able to contact you during their trip</p>
+                            <label class="ad-a-house__text3">Phone number</label>
+                            <div class="row mt-2">
+                                <div class="form-group col-12 col-lg-5 col-xl-6 mb-0">
+                                    <input class="form-control ad-a-house__input-text m-border__invalid" type="text" name="" placeholder="(+84) 0905111222">
+                                    <div class="m-invalid-feedback">
+                                        Please enter phone number
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 col-xl-4 px-0">
+                                    <a href="#bookingStep2EnterCode" class="m-btn3 m-btn-confirm1 mt-2 mt-lg-0 mx-auto mx-lg-0" onclick="showBookingStep2EnterCode()">Sent</a>
+                                </div>
+                                <div class="col-12 col-lg-3 col-xl-2 pl-lg-4 pl-xl-0 text-center text-lg-left px-0 mt-2">
+                                    <a href="" class="ad-a-house__link2"> Send Again</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Booking Step 2 Confirm pn -->
+
+        <!-- Begin Booking Step 2 Enter Code -->
+        <section id="bookingStep2EnterCode" class="w-100">
+            <div class="container mt-4 pt-2">
+                <div class="mx-0 mx-sm-3 mx-lg-5 my-5">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-3 pr-0 position__relative">
+                            <div class="booking__line position-absolute">
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">1</div>
+                                <p class="booking__step-item-title">Time booking</p>
+                            </div>
+                            <div class="booking__step booking-active">
+                                <div class="booking__step-item-circle rounded-circle">2</div>
+                                <p class="booking__step-item-title">Confirm phone number</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">3</div>
+                                <p class="booking__step-item-title">Confirm email</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">4</div>
+                                <p class="booking__step-item-title">Payment method</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">5</div>
+                                <p class="booking__step-item-title" >Review booking</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p class="booking__text1 text-uppercase">Book a house</p>
+                            <p class="booking__text2">Confirm your phone number</p>
+                            <p class="booking__text3">Then your tenants will be able to contact you during their trip</p>
+                            <label class="ad-a-house__text3">Phone number</label>
+                            <div class="row mt-2">
+                                <div class="form-group col-12 col-lg-5 col-xl-6 mb-0">
+                                    <input class="form-control ad-a-house__input-text m-border__invalid" type="text" name="" placeholder="(+84) 0905111222">
+                                    <div class="m-invalid-feedback">
+                                        Please enter phone number
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 col-xl-4">
+                                    <a href="" class="m-btn3 m-btn-sent mt-2 mt-lg-0 mx-auto mx-lg-0">Sent</a>
+                                </div>
+                                <div class="col-12 col-lg-3 col-xl-2 pl-lg-4 pl-xl-0 text-center text-lg-left mt-2">
+                                    <a href="" class="ad-a-house__link3 font-weight-bold"> Send Again</a>
+                                </div>
+                            </div>
+                            <p class="ad-a-house__text1 mt-4">Enter Code</p>
+                            <p class="ad-a-house__text5">Your code was sent to your phone, please enter 4 digits</p>
+                            <div class="form-row pr-0 pr-sm-5">
+                                <div class="col-3 px-2 px-sm-3">
+                                    <input class="form-control ad-a-house__input-receive-code m-border__valid" type="text" name="" maxlength="1">
+                                    <div class="m-valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="m-invalid-feedback d-none">
+                                        Please enter code
+                                    </div>
+                                </div>
+                                <div class="col-3 px-2 px-sm-3">
+                                    <input class="form-control ad-a-house__input-receive-code" type="text" name="" maxlength="1">
+                                    <div class="m-valid-feedback d-none">
+                                        Looks good!
+                                    </div>
+                                    <div class="m-invalid-feedback d-none">
+                                        Please enter code
+                                    </div>
+                                </div>
+                                <div class="col-3 px-2 px-sm-3">
+                                    <input class="form-control ad-a-house__input-receive-code m-border__invalid" type="text" name="" maxlength="1">
+                                    <div class="m-valid-feedback d-none">
+                                        Looks good!
+                                    </div>
+                                    <div class="m-invalid-feedback">
+                                        Please enter code
+                                    </div>
+                                </div>
+                                <div class="col-3 px-2 px-sm-3">
+                                    <input class="form-control ad-a-house__input-receive-code m-border__invalid" type="text" name="" maxlength="1">
+                                    <div class="m-valid-feedback d-none">
+                                        Looks good!
+                                    </div>
+                                    <div class="m-invalid-feedback">
+                                        Please enter code
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#bookingStep3SendEmail" class="mt-4 m-btn2 m-btn-confirm1 btn-block text-center" onclick="showBookingStep3SendEmail()">Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Booking Step 2 Enter Code -->
+
+        <!-- Begin Booking Step 3 Send Email -->
+        <section id="bookingStep3SendEmail" class="w-100">
+            <div class="container mt-4 pt-2">
+                <div class="mx-0 mx-sm-3 mx-lg-5 my-5">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-3 pr-0 position__relative">
+                            <div class="booking__line position-absolute">
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">1</div>
+                                <p class="booking__step-item-title">Time booking</p>
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">2</div>
+                                <p class="booking__step-item-title">Confirm phone number</p>
+                            </div>
+                            <div class="booking__step booking-active">
+                                <div class="booking__step-item-circle rounded-circle">3</div>
+                                <p class="booking__step-item-title">Confirm email</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">4</div>
+                                <p class="booking__step-item-title">Payment method</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">5</div>
+                                <p class="booking__step-item-title" >Review booking</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p class="booking__text1 text-uppercase">Book a house</p>
+                            <p class="booking__text2">E-mail confirmation</p>
+                            <p class="booking__text3">We will send you information about your booking and other news</p>
+                            <label class="ad-a-house__text3">Your email</label>
+                            <div class="form-row align-items-center mt-2">
+                                <div class="form-group col-12 col-lg-5 col-xl-6 mb-0">
+                                    <input class="form-control ad-a-house__input-text" type="text" name="" placeholder="david.tom@gmail.com">
+                                </div>
+                                <div class="col-12 col-lg-4 col-xl-4">
+                                    <a href="#bookingStep3ConfirmEmail" class="m-btn3 m-btn-confirm1 mt-2 mt-lg-0 mx-auto mx-lg-0" onclick="showBookingStep3ConfirmEmail()">Sent</a>
+                                </div>
+                                <div class="col-12 col-lg-3 col-xl-2 pl-lg-4 pl-xl-0 text-center text-lg-left">
+                                    <a href="" class="ad-a-house__link2">Send Again</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Booking Step 3 Send Email -->
+
+        <!-- Begin Booking Step 3 Confirm Email -->
+        <section id="bookingStep3ConfirmEmail" class="w-100">
+            <div class="container mt-4 pt-2">
+                <div class="mx-0 mx-sm-3 mx-lg-5 my-5">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-3 pr-0 position__relative">
+                            <div class="booking__line position-absolute">
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">1</div>
+                                <p class="booking__step-item-title">Time booking</p>
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">2</div>
+                                <p class="booking__step-item-title">Confirm phone number</p>
+                            </div>
+                            <div class="booking__step booking-active">
+                                <div class="booking__step-item-circle rounded-circle">3</div>
+                                <p class="booking__step-item-title">Confirm email</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">4</div>
+                                <p class="booking__step-item-title">Payment method</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">5</div>
+                                <p class="booking__step-item-title" >Review booking</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p class="booking__text1 text-uppercase">Book a house</p>
+                            <p class="booking__text2">E-mail confirmation</p>
+                            <p class="booking__text3">We will send you information about your booking and other news</p>
+                            <label class="ad-a-house__text3">Your email</label>
+                            <div class="form-row align-items-center mt-2">
+                                <div class="form-group col-12 col-lg-5 col-xl-6 mb-0">
+                                    <input class="form-control ad-a-house__input-text" type="text" name="" placeholder="david.tom@gmail.com">
+                                </div>
+                                <div class="col-12 col-lg-4 col-xl-4">
+                                    <a href="" class="m-btn3 m-btn-sent mt-2 mt-lg-0 mx-auto mx-lg-0">Sent</a>
+                                </div>
+                                <div class="col-12 col-lg-3 col-xl-2 pl-lg-4 pl-xl-0 text-center text-lg-left">
+                                    <a href="" class="ad-a-house__link3">Send Again</a>
+                                </div>
+                            </div>
+                            <p class="booking__text2 mt-5">Check your email</p>
+                            <p class="booking__text3">
+                                In hac habitasse platea dictumst. Fusce varius sapien vel nisl congue, eu porta velit iaculis. In non porttitor turpis. Cras sit amet fermentum libero. Donec fringilla mattis imperdiet. Aenean sollicitudin hendrerit elit, ut posuere libero sodales vel. Quisque sed congue felis, eget vehicula sem. 
+                                <br><br>
+                                Aenean eu bibendum felis. Fusce et mollis ex. Sed a consectetur lectus. In commodo augue vitae velit molestie, eget vehicula mi elementum. In id ultricies lectus. Proin nulla ante, dignissim nec purus eu, vehicula molestie tellus. Fusce ac mi in sapien aliquet faucibus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Booking Step 3 Confirm Email -->
+    </main>
+</div>
+@include('../partials/foot.html')
+<script>
+    $('section').hide();
+    $('#bookingStep1').show();
+    var link=window.location.href;
+    var getLinkIdStep = link.split("#")[1];
+    if(getLinkIdStep == "") {
+        $('section').hide();
+        $('#bookingStep1').show();
+    }
+    if(getLinkIdStep == "bookingStep1ConfirmDetail") {
+        $('section').hide();
+        $('#bookingStep1ConfirmDetail').show();
+    }
+    if(getLinkIdStep == "bookingStep2ConfirmPn") {
+        $('section').hide();
+        $('#bookingStep2ConfirmPn').show();
+    }
+    if(getLinkIdStep == "bookingStep2EnterCode") {
+        $('section').hide();
+        $('#bookingStep2EnterCode').show();
+    }
+    if(getLinkIdStep == "bookingStep3SendEmail") {
+        $('section').hide();
+        $('#bookingStep3SendEmail').show();
+    }
+    if(getLinkIdStep == "bookingStep3ConfirmEmail") {
+        $('section').hide();
+        $('#bookingStep3ConfirmEmail').show();
+    }
+    function showBookingStep1ConfirmDetail() {
+        $('section').hide();
+        $('#bookingStep1ConfirmDetail').show();
+    }
+    function showBookingStep2ConfirmPn() {
+        $('section').hide();
+        $('#bookingStep2ConfirmPn').show();
+    }
+    function showBookingStep2EnterCode() {
+        $('section').hide();
+        $('#bookingStep2EnterCode').show();
+    }
+    function showBookingStep3SendEmail() {
+        $('section').hide();
+        $('#bookingStep3SendEmail').show();
+    }
+    function showBookingStep3ConfirmEmail() {
+        $('section').hide();
+        $('#bookingStep3ConfirmEmail').show();
+    }
+</script>

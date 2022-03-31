@@ -1,0 +1,296 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    @include('../partials/header.html')
+    <main class="h-100 house">
+        <div class="container mb-5 pb-5">
+			<p class="house__title-1 mt-4">Search</p>
+			<div class="row">
+				<div class="col-md-5 col-lg-4">
+					<div class="mr-4">
+						<label class="m-check-radio-blue mb-3">
+							<input class="m-check-radio-blue__input" type="radio" name="type" required>
+							<span class="m-check-radio-blue__status"></span>
+							<span class="house__text-1">Search for a house</span>
+						</label>
+						<label class="m-check-radio-blue">
+							<input class="m-check-radio-blue__input" type="radio" name="type" required>
+							<span class="m-check-radio-blue__status"></span>
+							<span class="house__text-1">Search for an ad</span>
+						</label>
+						<div class="m-bg-1 my-4"></div>
+						<p class="house__text-7 mb-0">Price range</p>
+						<div class="d-sm-flex">
+							<div class="w-100 mt-2 mb-4 m-no-ui-slider-pick-price">
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<div class="">
+										<span class="house__money-price">$</span>
+										<input class="text-center house__input-price" type="text" id="noUiSliderPickPriceInput1" readonly>
+									</div>
+									<div class="">
+										<span class="house__money-price">$</span>
+										<input class="text-center house__input-price" type="text" id="noUiSliderPickPriceInput2" readonly>
+									</div>
+								</div>
+								<div id="noUiSliderPickPrice" class="w-100 mb-3"></div>
+							</div>
+						</div>
+
+						<p class="house__text-7 mb-3">Region</p>
+						<div class="mb-4">
+							<select required>
+								<option value="" disabled selected>--Choose region--</option>
+								<option value="1">Viet Nam</option>
+								<option value="2">Nhat Ban</option>
+							</select>
+						</div>
+
+						<div class="d-flex justify-content-between mt-3 mb-3">
+							<p class="house__text-7">Board size (m<sup>2</sup>)</p>
+							<div class="d-flex house__btn">
+								<div class="house__btn-sub">
+									<img src="images/ic-sub.svg" alt="">
+								</div>
+								<input type="text" value="0" class="house__btn-result">
+								<div class="house__btn-add">
+									<img src="images/ic-add.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="d-flex justify-content-between mb-3">
+							<p class="house__text-7">Gender</p>
+							<label class="m-check-box-blue mb-3">
+								<input id="managePasswordCheck" class="m-check-box-blue__input" type="checkbox" name="gender">
+								<span class="m-check-box-blue__status"></span>
+							</label>
+						</div>
+						<div class="d-flex justify-content-between">
+							<p class="house__text-7">Term</p>
+							<label class="m-check-box-blue mb-3">
+								<input id="managePasswordCheck" class="m-check-box-blue__input" type="checkbox" name="term">
+								<span class="m-check-box-blue__status"></span>
+							</label>
+						</div>
+						<div class="m-bg-1 mt-2 mb-4"></div>
+						<p class="house__text-7">Sort by</p>
+						<label class="m-check-radio-blue mb-3">
+							<input class="m-check-radio-blue__input" type="radio" name="sort" required>
+							<span class="m-check-radio-blue__status"></span>
+							<span class="house__text-1">Pending</span>
+						</label>
+						<label class="m-check-radio-blue mb-3">
+							<input class="m-check-radio-blue__input" type="radio" name="sort" required>
+							<span class="m-check-radio-blue__status"></span>
+							<span class="house__text-1">Price</span>
+						</label>
+						<label class="m-check-radio-blue mb-3">
+							<input class="m-check-radio-blue__input" type="radio" name="sort" required>
+							<span class="m-check-radio-blue__status"></span>
+							<span class="house__text-1">Place (near by > far from)</span>
+						</label>
+						<label class="m-check-radio-blue mb-3">
+							<input class="m-check-radio-blue__input" type="radio" name="sort" required>
+							<span class="m-check-radio-blue__status"></span>
+							<span class="house__text-1">Place (far from > near by)</span>
+						</label>
+					</div>
+				</div>
+				<div class="col-md-7 col-lg-8 ml-grey pl-0 pl-md-3">
+					<div class="ml-3">
+						<p class="house__title-3">List house</p>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="house__item my-2">
+									<a href="" class="house__title-2">
+										<img src="images/p4.png" alt="">
+										<p class="mt-2 mb-0">Tokyo-to, Nakano-ku, Kamit Ahasha Kurrin</p>
+									</a>
+									<label class="btn-heart">
+										<input class="btn-heart__input" type="checkbox">
+										<span class="btn-heart__status"></span>
+									</label>
+									<div class="d-flex">
+										<div>
+											<span class="house__text-4">$</span>
+											<span class="house__text-5">20</span>
+											<span class="house__text-2">per month</span>
+										</div>
+										<div class="ml-4">
+											<span class="house__text-5">6</span>
+											<span class="house__text-2">m<sup>2</sup></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="house__item my-2">
+									<a href="" class="house__title-2">
+										<img src="images/p5.png" alt="">
+										<p class="mt-2 mb-0">Tokyo-to, Nakano-ku, Kamit Ahasha Kurrin</p>
+									</a>
+									<label class="btn-heart">
+										<input class="btn-heart__input" type="checkbox">
+										<span class="btn-heart__status"></span>
+									</label>
+									<div class="d-flex">
+										<div>
+											<span class="house__text-4">$</span>
+											<span class="house__text-5">20</span>
+											<span class="house__text-2">per month</span>
+										</div>
+										<div class="ml-4">
+											<span class="house__text-5">6</span>
+											<span class="house__text-2">m<sup>2</sup></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="house__item my-2">
+									<a href="" class="house__title-2">
+										<img src="images/p6.png" alt="">
+										<p class="mt-2 mb-0">Tokyo-to, Nakano-ku, Kamit Ahasha Kurrin</p>
+									</a>
+									<label class="btn-heart">
+										<input class="btn-heart__input" type="checkbox">
+										<span class="btn-heart__status"></span>
+									</label>
+									<div class="d-flex">
+										<div>
+											<span class="house__text-4">$</span>
+											<span class="house__text-5">20</span>
+											<span class="house__text-2">per month</span>
+										</div>
+										<div class="ml-4">
+											<span class="house__text-5">6</span>
+											<span class="house__text-2">m<sup>2</sup></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="house__item my-2">
+									<a href="" class="house__title-2">
+										<img src="images/p7.png" alt="">
+										<p class="mt-2 mb-0">Tokyo-to, Nakano-ku, Kamit Ahasha Kurrin</p>
+									</a>
+									<label class="btn-heart">
+										<input class="btn-heart__input" type="checkbox">
+										<span class="btn-heart__status"></span>
+									</label>
+									<div class="d-flex">
+										<div>
+											<span class="house__text-4">$</span>
+											<span class="house__text-5">20</span>
+											<span class="house__text-2">per month</span>
+										</div>
+										<div class="ml-4">
+											<span class="house__text-5">6</span>
+											<span class="house__text-2">m<sup>2</sup></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="house__item my-2">
+									<a href="" class="house__title-2">
+										<img src="images/p8.png" alt="">
+										<p class="mt-2 mb-0">Tokyo-to, Nakano-ku, Kamit Ahasha Kurrin</p>
+									</a>
+									<label class="btn-heart">
+										<input class="btn-heart__input" type="checkbox">
+										<span class="btn-heart__status"></span>
+									</label>
+									<div class="d-flex">
+										<div>
+											<span class="house__text-4">$</span>
+											<span class="house__text-5">20</span>
+											<span class="house__text-2">per month</span>
+										</div>
+										<div class="ml-4">
+											<span class="house__text-5">6</span>
+											<span class="house__text-2">m<sup>2</sup></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="house__item my-2">
+									<a href="" class="house__title-2">
+										<img src="images/p9.png" alt="">
+										<p class="mt-2 mb-0">Tokyo-to, Nakano-ku, Kamit Ahasha Kurrin</p>
+									</a>
+									<label class="btn-heart">
+										<input class="btn-heart__input" type="checkbox">
+										<span class="btn-heart__status"></span>
+									</label>
+									<div class="d-flex">
+										<div>
+											<span class="house__text-4">$</span>
+											<span class="house__text-5">20</span>
+											<span class="house__text-2">per month</span>
+										</div>
+										<div class="ml-4">
+											<span class="house__text-5">6</span>
+											<span class="house__text-2">m<sup>2</sup></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="house__item my-2">
+									<a href="" class="house__title-2">
+										<img src="images/p10.png" alt="">
+										<p class="mt-2 mb-0">Tokyo-to, Nakano-ku, Kamit Ahasha Kurrin</p>
+									</a>
+									<label class="btn-heart">
+										<input class="btn-heart__input" type="checkbox">
+										<span class="btn-heart__status"></span>
+									</label>
+									<div class="d-flex">
+										<div>
+											<span class="house__text-4">$</span>
+											<span class="house__text-5">20</span>
+											<span class="house__text-2">per month</span>
+										</div>
+										<div class="ml-4">
+											<span class="house__text-5">6</span>
+											<span class="house__text-2">m<sup>2</sup></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="house__item my-2">
+									<a href="" class="house__title-2">
+										<img src="images/p11.png" alt="">
+										<p class="mt-2 mb-0">Tokyo-to, Nakano-ku, Kamit Ahasha Kurrin</p>
+									</a>
+									<label class="btn-heart">
+										<input class="btn-heart__input" type="checkbox">
+										<span class="btn-heart__status"></span>
+									</label>
+									<div class="d-flex">
+										<div>
+											<span class="house__text-4">$</span>
+											<span class="house__text-5">20</span>
+											<span class="house__text-2">per month</span>
+										</div>
+										<div class="ml-4">
+											<span class="house__text-5">6</span>
+											<span class="house__text-2">m<sup>2</sup></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 mt-3">
+								<button class="w-100 m-btn m-btn-white2">LOAD MORE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </main>
+    @include('../partials/footer.html')
+</div>
+@include('../partials/foot.html')

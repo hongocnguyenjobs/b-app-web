@@ -1,0 +1,173 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    <main class="m-height-screen d-flex justify-content-center">
+        <!-- Begin Booking Step 4 Payment Method -->
+        <section id="bookingStep4PaymentMethod" class="w-100">
+            <div class="container mt-4 pt-2">
+                <div class="mx-0 mx-sm-3 mx-lg-5 my-5">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-3 pr-0 position__relative">
+                            <div class="booking__line position-absolute">
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">1</div>
+                                <p class="booking__step-item-title">Time booking</p>
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">2</div>
+                                <p class="booking__step-item-title">Confirm phone number</p>
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">3</div>
+                                <p class="booking__step-item-title">Confirm email</p>
+                            </div>
+                            <div class="booking__step booking-active">
+                                <div class="booking__step-item-circle rounded-circle">4</div>
+                                <p class="booking__step-item-title">Payment method</p>
+                            </div>
+                            <div class="booking__step">
+                                <div class="booking__step-item-circle rounded-circle">5</div>
+                                <p class="booking__step-item-title" >Review booking</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p class="booking__text1 text-uppercase">Book a house</p>
+                            <p class="booking__text2">Select Payment Method</p>
+                            <p class="booking__text3">Select one card from the list</p>
+                            <div class="mb-4">
+                                <div class="d-flex align-items-center py-4 border-top">
+                                    <label class="m-check-radio-blue mr-5">
+                                        <input class="m-check-radio-blue__input" type="radio" name="numberCard" checked required>
+                                        <span class="m-check-radio-blue__status"></span>
+                                        <span class="booking__text3 font-weight-bold">**** **** **** 5553</span>
+                                    </label>
+                                    <label class="booking__text7 ml-auto mb-0">VISA</label>
+                                </div>
+                                <div class="d-flex align-items-center py-4 border-top">
+                                    <label class="m-check-radio-blue mr-5">
+                                        <input class="m-check-radio-blue__input" type="radio" name="numberCard" required>
+                                        <span class="m-check-radio-blue__status"></span>
+                                        <span class="booking__text3 font-weight-bold">**** **** **** 7741</span>
+                                    </label>
+                                    <label class="booking__text7 ml-auto mb-0">Master Card</label>
+                                </div>
+                                <div class="d-flex align-items-center py-4 border-top">
+                                    <label class="m-check-radio-blue mr-5">
+                                        <input class="m-check-radio-blue__input" type="radio" name="numberCard" required>
+                                        <span class="m-check-radio-blue__status"></span>
+                                        <span class="booking__text3 font-weight-bold">**** **** **** 2143</span>
+                                    </label>
+                                    <label class="booking__text7 ml-auto mb-0">JCB</label>
+                                </div>
+                                <div class="d-flex align-items-center py-4 border-top">
+                                    <label class="m-check-radio-blue mr-5">
+                                        <input class="m-check-radio-blue__input" type="radio" name="numberCard" required>
+                                        <span class="m-check-radio-blue__status"></span>
+                                        <span class="booking__text3 font-weight-bold">**** **** **** 1150</span>
+                                    </label>
+                                    <label class="booking__text7 ml-auto mb-0">Electron</label>
+                                </div>
+                                <div class="d-flex align-items-center py-4 border-top border-bottom">
+                                    <label class="m-check-radio-blue mr-5">
+                                        <input class="m-check-radio-blue__input" type="radio" name="numberCard" required>
+                                        <span class="m-check-radio-blue__status"></span>
+                                        <span class="booking__text3 font-weight-bold">**** **** **** 1578</span>
+                                    </label>
+                                    <label class="booking__text7 ml-auto mb-0">ABSA</label>
+                                </div>
+                            </div>
+                            <a href="#bookingStep5ConfirmBooking" class="m-btn2 m-btn-confirm1 btn-block text-center" onclick="showBookingStep5ConfirmBooking()">Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Booking Step 4 Payment Method -->
+
+        <!-- Begin Booking Step 5 Confirm Booking -->
+        <section id="bookingStep5ConfirmBooking" class="w-100">
+            <div class="container mt-4 pt-2">
+                <div class="mx-0 mx-sm-3 mx-lg-5 my-5">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-3 pr-0 position__relative">
+                            <div class="booking__line position-absolute">
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">1</div>
+                                <p class="booking__step-item-title">Time booking</p>
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">2</div>
+                                <p class="booking__step-item-title">Confirm phone number</p>
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">3</div>
+                                <p class="booking__step-item-title">Confirm email</p>
+                            </div>
+                            <div class="booking__step booking-actived">
+                                <div class="booking__step-item-circle rounded-circle">4</div>
+                                <p class="booking__step-item-title">Payment method</p>
+                            </div>
+                            <div class="booking__step booking-active">
+                                <div class="booking__step-item-circle rounded-circle">5</div>
+                                <p class="booking__step-item-title" >Review booking</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p class="booking__text1 text-uppercase">Book a house</p>
+                            <p class="booking__text2">Review details of your booking</p>
+                            <div class="mb-4">
+                                <div class="py-4 border-top">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="booking__text3 mb-2">Address</p>
+                                            <p class="booking__text3 font-weight-bold mb-4">Tokyo-to, Nakano-ku, Kamitakada, 2 Chrome</p>
+                                            <p class="booking__text3 mb-2">Owner</p>
+                                            <p class="booking__text3 font-weight-bold">Mark Estrada</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="w-100 h-100 rounded" style="background:url(images/img1.png) center center / cover">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center py-4 border-top">
+                                    <p class="booking__text3 mb-2">Area</p>
+                                    <p class="ml-auto booking__text3 font-weight-bold mb-0">6 <span>m<sup>2</sup></span></p>
+                                </div>
+                                <div class="d-flex align-items-center py-4 border-top border-bottom">
+                                    <p class="booking__text3 mb-2">Date</p>
+                                    <p class="ml-auto booking__text3 font-weight-bold mb-0">17 - 19 April</p>
+                                </div>
+                                <p class="booking__text5 mt-3 text-right font-weight-bold">Total cost: $<span class="booking__text6">24</span> <span class="booking__text3 font-weight-normal">for 4 days</span></p>
+                            </div>
+                            <a href="booking-congratulation.html" class="m-btn2 m-btn-confirm1 btn-block text-center">Confirm the booking</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+        </section>
+        <!-- End Booking Step 5 Confirm Booking -->
+    </main>
+</div>
+@include('../partials/foot.html')
+<script>
+    $('section').hide();
+    $('#bookingStep4PaymentMethod').show();
+    var link=window.location.href;
+    var getLinkIdStep = link.split("#")[1];
+    if(getLinkIdStep == "") {
+        $('section').hide();
+        $('#bookingStep4PaymentMethod').show();
+    }
+    if(getLinkIdStep == "bookingStep5ConfirmBooking") {
+        $('section').hide();
+        $('#bookingStep5ConfirmBooking').show();
+    }
+    function showBookingStep5ConfirmBooking() {
+        $('section').hide();
+        $('#bookingStep5ConfirmBooking').show();
+    }
+</script>

@@ -1,0 +1,453 @@
+.house{
+    padding-bottom: 80px;
+    &__item{
+        img{
+            width: 100%;
+        }
+    }
+    &__title-1{
+        font-size: 36px;
+        color: #122D47;
+        line-height: 50px;
+    }
+    &__title-2{
+        font-size: 15px;
+        color: #122D47;
+        line-height: 25px;
+        font-weight: 500;
+    }
+    &__title-3{
+        font-size: 18px;
+        color: #122D47;
+        line-height: 28px;
+        font-weight: 500;
+    }
+    &__title-4{
+        font-size: 24px;
+        color: #122D47;
+        line-height: 34px;
+        font-weight: 700;
+    }
+    &__text-1{
+        font-size: 15px;
+        color: #425A71;
+        line-height: 25px;
+    }
+    &__text-2{
+        font-size: 15px;
+        color: #00002F;
+        line-height: 25px;
+    }
+    &__text-3{
+        font-size: 15px;
+        color: #00002F;
+        line-height: 25px;
+    }
+    &__text-4{
+        font-weight: 700;
+        font-size: 15px;
+        color: #00002F;
+        line-height: 25px;
+    }
+    &__text-5{
+        font-weight: 700;
+        font-size: 15px;
+        color: #da5b47;
+        line-height: 25px;
+    }
+    &__text-6{
+        font-weight: 700;
+        font-size: 15px;
+        color: #9FAFBE;
+        line-height: 25px;
+    }
+    &__text-7{
+        font-weight: 700;
+        font-size: 15px;
+        color: #425A71;
+        line-height: 25px;
+    }
+    &__text-8{
+        font-weight: 700;
+        font-size: 24px;
+        color: #00002F;
+        line-height: 25px;
+    }
+    &__text-9{
+        font-weight: 700;
+        font-size: 24px;
+        color: #da5b47;
+        line-height: 25px;
+    }
+    &__link{
+        font-size: 15px;
+        color: #2995E1;
+        line-height: 25px;
+        text-decoration: none;
+        &:hover{
+            color: #67c0ff;
+            svg path{
+                fill: #67c0ff;
+            }
+        }
+    }
+    &__wrap{
+        border: 1px solid #C4D6E2;
+        border-radius: 6px;
+        padding: 20px 35px;
+    }
+    .nav,.nav-link{
+        border: none;
+    }
+    .nav-link.active{
+        padding: 5px 0px;
+        border-bottom: 1px solid #2995E1;
+        color: #2995E1;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .nav-link{
+        margin-right: 20px;
+        padding: 5px 0px;
+        color: #9FAFBE;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .nav{
+        cursor: pointer;
+    }
+
+    .btn-heart {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        &__input {
+            display: none;
+        }
+        &__input:checked+.btn-heart__status {
+            background-image: url(../images/ic-heart-df-checked.svg);
+        }
+        &__status {
+            background-image: url(../images/ic-heart-df.svg);
+            background-size: auto 100%;
+            width: 23px;
+            height: 20px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+    }
+
+    .btn-heart-2 {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        z-index: 99;
+        &__input {
+            display: none;
+        }
+        &__input:checked+.btn-heart-2__status {
+            background-image: url(../images/ic-heart-df-checked.svg);
+        }
+        &__status {
+            background-image: url(../images/ic-heart-df.svg);
+            background-size: auto 100%;
+            width: 41px;
+            height: 36px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+    }
+
+    &__input-price {
+		width: 38px;
+		border: none;
+		outline: none;
+		font-weight: 700;
+		font-size: 15px;
+        color: #da5b47;
+	}
+	&__money-price {
+		font-weight: 700;
+        font-size: 15px;
+        color: #425A71;
+    }
+    &__btn-sub{
+        width: 30px;
+        height: 30px;
+        font-weight: 700;
+        display: flex;
+        background-color: #2995E1;
+        color: #FFFFFF;
+        text-align: center;
+        justify-content: center;
+        border-radius: 3px;
+        margin-top: -5px;
+        cursor: pointer;
+    }
+    &__btn-add{
+        @extend .house__btn-sub;
+    }
+    &__btn-result{
+        font-weight: 700;
+        width: 60px;
+        font-size: 15px;
+        color: #425A71;
+        text-align: center;
+        border: none;
+        margin-top: -15px;
+    }
+    &__btn-result:focus {
+        outline:0;
+    }
+    &__map {
+		width: 100%;
+		height: 420px;
+    }
+    &__circle{
+        width: 120px;
+        height: 120px;
+        border: 2px solid #C4D6E2;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    &__avatar {
+		&-box {
+			background: #FFFFFF;
+			border: 1px solid #C4D6E2;
+			box-shadow: 0 4px 12px 0 rgba(4,65,108,0.15);
+			border-radius: 3px; position: absolute;
+			top: -250px;
+			right: 15px;
+			width: 363px;
+			height: 368px;
+            z-index: 99;
+		}
+		&-frame {
+			background: #EDEFF2;
+			width: 200px;
+			height: 200px;
+		}
+	}
+    #carouselDetail{
+        li{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .carousel-dots ol{
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+    &__banner {
+        position: relative;
+        height: calc(100vh - 86px);
+        &--search {
+            width: 60%;
+            input {
+                font-size: 16px;
+                height: 50px;
+            }
+            .btn {
+                padding: .375rem 14px;
+            }
+        }
+        &--text1 {
+            font-size: 25px;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+    }
+    &__info {
+        &--items {
+            border: 1px solid #d0d0d0;
+            box-shadow: 0 8px 10px -8px #000000;
+            img {
+                object-fit: cover;
+                object-position: center center;
+                width: 100px;
+                height: 100%;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &--items2 {
+            height: 300px;
+            img {
+                object-fit: cover;
+                object-position: center center;
+                width: 100%;
+                height: 230px;
+            }
+            a {
+                font-size: 24px;
+                color: #FFFFFF;
+                font-weight: 500;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__search {
+        &-content {
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0.25rem;
+            height: 100%;
+            padding: 15px 15px 60px 15px;
+            position: relative;
+            &--images {
+                img {
+                    width: 100%;
+                }
+            }
+            &--body {
+                a {
+                    color: #000000;
+                    font-size: 20px;
+                    font-weight: 600;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            &--button {
+                position: absolute;
+                bottom: 15px;
+                left: 15px;
+            }
+        }
+        &-sidebar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 350px;
+            background-color: #294258;
+            z-index: 9999;
+            display: none;
+            padding: 20px 30px;
+            .house__text-1 {
+                font-size: 15px;
+                color: #FFFFFF;
+                line-height: 25px;
+            }
+            .house__text-7 {
+                font-size: 15px;
+                color: #FFFFFF;
+                line-height: 25px;
+                font-weight: 700;
+            }
+            .house__btn {
+                align-items: center;
+            }
+            .select {
+                background-color: #FFFFFF;
+            }
+            .house__input-price {
+                background-color: transparent;
+                border: 1px solid #8EC6E9;
+                border-radius: 5px;
+                width: 50px;
+                color: #FFFFFF;
+            }
+            .house__money-price {
+                color: #FFFFFF;
+            }
+            .house__btn-result {
+                background-color: transparent;
+                border: 1px solid #8EC6E9;
+                border-radius: 5px;
+                color: #FFFFFF;
+                margin: 0 5px;
+                height: 50px;
+            }
+        }
+    }
+}
+#searchFunctionBtn {
+    img {
+        cursor: pointer;
+    }
+}
+@media (max-width: 992px) {
+    .house{
+        &__head-reponsive{
+            margin-top: 200px;
+        }
+        #carouselDetail{
+            .carousel-dots ol{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        &__avatar {
+            &-box {
+                z-index: 10;
+                top: -350px;
+                left: 0px;
+                width: 300px;
+                height: 300px;
+            }
+            &-frame {
+                background: #EDEFF2;
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .house{
+        &__banner {
+            height: calc(100vh - 56.5px);
+            &--search {
+                width: 80%;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .house{
+        &__head-reponsive{
+            margin-top: 150px;
+        }
+        &__avatar {
+            &-box {
+                top: -300px;
+                width: 250px;
+                height: 250px;
+            }
+            &-frame {
+                width: 130px;
+                height: 130px;
+            }
+        }
+        &__circle{
+            width: 100px;
+            height: 100px;
+        }
+        &__search {
+            &-sidebar {
+                top: 121px;
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .house{
+        &__circle{
+            width: 80px;
+            height: 80px;
+        }
+    }
+}

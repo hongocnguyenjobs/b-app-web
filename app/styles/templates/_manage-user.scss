@@ -1,0 +1,98 @@
+.manage-user{
+    height: 100%;
+    padding-bottom: 60px;
+    .bl-gray{
+        border-left: 1px solid #C4D6E2;
+    }
+    &__wrap{
+        background: #F1F6FB;
+        border: 1px solid #C4D6E2;
+        border-radius: 8px; 
+    }
+    &__frame-profile-photo {
+		width: 200px; 
+		height: 200px;
+		&--btn-upload {
+			width: 50px; 
+			height: 50px; 
+			background-image: linear-gradient(-140deg, #2694E1 0%, #58A7D7 100%); 
+			bottom: -30px;
+			cursor: pointer;
+		}
+    }
+    &__input-text {
+		padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        font-weight: 700;
+        font-size: 15px;
+        color: #425A71;
+        line-height: 25px;
+    }
+    &__text{
+        margin-bottom: 8px;
+        margin-top: 20px;
+        font-size: 15px;
+        color: #425A71;
+        line-height: 25px;
+    }
+    &__text1{
+        font-size: 15px;
+        color: #425A71;
+        line-height: 25px;
+    }
+    &__text2{
+        font-weight: 700;
+        font-size: 15px;
+        color: #425A71;
+        line-height: 25px;
+    }
+    &__text3{
+        font-weight: 700;
+        font-size: 15px;
+        color: #9FAFBE;
+        line-height: 25px;
+    }
+    &__text4{
+        font-size: 24px;
+        color: #122D47;
+        line-height: 34px;
+    }
+    &__text5{
+        font-size: 13px;
+        color: #9FAFBE;
+        line-height: 18px;
+    }
+    &__title{
+        font-size: 36px;
+        color: #122D47;
+        line-height: 50px;
+    }
+    &__link{
+        color: #2995E1;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        &:hover{
+            color: rgb(17, 61, 93);
+            text-decoration: none;
+        }
+    }
+    .mb-grey{
+        border-bottom: 1px solid #C4D6E2;
+    }
+    &__stats{
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+    }
+}
+@media (max-width:992px) {
+    .manage-user{
+        .bl-gray{
+            border-left:none;
+        }
+    }
+}

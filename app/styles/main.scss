@@ -1,0 +1,28 @@
+/* Import bases */
+@import 'bases/font.scss';
+@import 'bases/variable.scss';
+@import 'bases/function.scss';
+@import 'bases/mixin.scss';
+@import 'bases/reset.scss';
+@import 'bases/override.scss';
+@import 'bases/common.scss';
+
+/* Import components */
+@import 'components/custom-select.scss';
+
+/* Import partials */
+@import 'partials/header.scss';
+@import 'partials/footer.scss';
+@import 'partials/manage-bar.scss';
+
+/* Import templates */
+@import 'templates/ad-a-house.scss';
+@import 'templates/account.scss';
+@import 'templates/house.scss';
+@import 'templates/preview.scss';
+@import 'templates/booking.scss';
+@import 'templates/add-new-card.scss';
+@import 'templates/manage-user.scss';
+@import 'templates/message.scss';
+@import 'templates/payment-history.scss';
+@import 'templates/detail-house.scss';

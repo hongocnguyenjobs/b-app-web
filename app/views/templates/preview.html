@@ -1,0 +1,51 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    @include('../partials/header.html')
+    <main class="h-100">
+        <div class="preview__frame-cover-no-photo d-flex align-items-center justify-content-center position-relative">
+            <div class="d-flex flex-column">
+                <img src="images/ic-no-photo.svg">
+                <label class="preview__text1 text-center mt-2">No photos</label>
+            </div>
+            <div class="preview__btn-heart">
+                <input id="preview__subscribe" type="checkbox">
+                <label for="preview__subscribe" class="preview__subscribe"></label>
+            </div>
+        </div>
+        <!-- <div class="preview__frame-cover d-flex align-items-center justify-content-center position-relative" style="background:url(images/img1.png) center center / cover">
+            <div class="preview__btn-heart">
+                <input id="preview__subscribe" type="checkbox">
+                <label for="preview__subscribe" class="preview__subscribe"></label>
+            </div>
+        </div> -->
+
+        <div class="container mb-100 position-relative">
+            <div class="preview__avatar-box d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-column">
+                    <div class="preview__avatar-frame rounded-circle d-flex justify-content-center align-items-end" style="background:url(images/ic-no-avatar.svg) bottom center / 151px 151px no-repeat #EDEFF2;">
+                    </div>
+                    <!-- <div class="preview__avatar-frame rounded-circle d-flex justify-content-center align-items-end" style="background:url(images/img6.png) center center / cover">
+                    </div> -->
+
+                    <p class="preview__text5 text-center mt-4 mb-2">Mark Estrada</p>
+                    <label class="preview__text4 text-center">Owner</label>
+                </div>
+            </div>
+            <div class="preview__content-info1">
+                <p class="preview__text2 mb-1">Tokyo-to, Nakano-ku, Kamitakada, 2 Chrome</p>
+                <label class="preview__text1">Not indicated</label>
+            </div>
+        	<div class="mt-5">
+                <p class="preview__text3 mb-1">Befory you join</p>
+                <label class="preview__text1">Not indicated</label>
+            </div>
+            <span class="m-line-light-grey mt-5 mb-4"></span>
+            <div class="preview__map mx-auto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.6630024081614!2d108.22190541533423!3d16.031049044717015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219efc3e3a283%3A0x92327dfe9c1e707e!2zVOG6p25nIDQsU-G7kSAyNSDEkMaw4budbmcgMiBUaMOhbmcgOSxI4bqjaSBDaMOidSzEkMOgIE7hurVuZywgMjUgMiBUaMOhbmcgOSwgSOG6o2kgQ2jDonUgRGlzdHJpY3QsIEjhuqNpIENow6J1LCBEYSBOYW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1525935789378"frameborder="0" class="w-100 h-100" style="border:0" allowfullscreen></iframe>
+            </div>
+            <p class="preview__text4 mt-3"><b>Location:</b> Tokyo-to, Nakano-ku, Kamitakada, 2 Chrome</p>
+        </div>
+    </main>
+    @include('../partials/footer.html')
+</div>
+@include('../partials/foot.html')

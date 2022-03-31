@@ -1,0 +1,228 @@
+.ad-a-house {
+	&__text1 {
+		font-size: 36px;
+		color: #122D47;
+	}
+	&__text2 {
+		font-size: 18px;
+		font-weight: 600;
+		color: #122D47;
+	}
+	&__text3 {
+		font-size: 15px;
+		color: #425A71;
+		line-height: 25px;
+	}
+	&__text4 {
+		font-size: 15px;
+		color: #425A71;
+		font-weight: 600;
+	}
+	&__text5 {
+		font-size: 15px;
+		color: #00002F;
+	}
+	&__text6 {
+		font-size: 13px;
+		color: #9FAFBE;
+	}
+	&__text7 {
+		font-size: 15px;
+		color: #CF260C;
+		font-weight: 700;
+	}
+	&__text8 {
+		font-size: 36px;
+		color: #122D47;
+	}
+	&__link1 {
+		font-size: 15px;
+		color: #425A71;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+			color: #425A71;
+		}
+	}
+	&__link2 {
+		opacity: 0.5;
+		font-size: 15px;
+		color: #2995E1;
+		line-height: 25px;
+	}
+	&__link3 {
+		font-size: 15px;
+		color: #2995E1;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+			color: #2995E1;
+		}
+	}
+	&__layout-cancel {
+		margin-top: 40px;
+		margin-bottom: 80px;
+	}
+	&__step1-frame {
+		width: 557px;
+	}
+	&__btn-close-on-white-board {
+		position: absolute;
+		top: 45px;
+    	right: 45px;
+	}
+	&__map {
+		width: 87%; 
+		height: 420px;
+	}
+	&__frame-upload-photos {
+		height: 140px; 
+		width: 100%;
+		&-btn {
+			height: 140px; 
+			width: 100%;
+			background-color: #EDEFF2;
+		}
+	}
+	&__btn-remove-photos {
+		position: absolute; 
+		top: -10px; 
+		right: -10px; 
+		background-color: white; 
+		width: 25px; 
+		padding: 7px;
+	}
+	&__frame-profile-photo {
+		width: 363px; 
+		height: 363px;
+		&--btn-upload {
+			width: 50px; 
+			height: 50px; 
+			background-image: linear-gradient(-140deg, #2694E1 0%, #58A7D7 100%); 
+			bottom: -30px;
+			cursor: pointer;
+		}
+	}
+	&__input-text {
+		padding-top: 10px !important;
+		padding-bottom: 10px !important;
+	}
+	&__input-receive-code {
+		padding: 10px !important;
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+
+// Ranger Style
+
+.ad-a-house {
+	&__noUi-Slider {
+		.noUi-handle-lower {
+			// display: none;
+		}
+		.noUi-horizontal {
+        height: 3px;
+	    }
+	    .noUi-target {
+	        border: none;
+	        border-radius: 10px;
+	        background: #E2E2E2;
+	    }
+	    .noUi-connect {
+	        background: #2995E1;
+	    }
+	    .noUi-horizontal .noUi-handle {
+	        top: -9px;
+	        width: 20px;
+	        height: 20px;
+	        &:focus {
+	            outline: none;
+	        }
+	        cursor: pointer;
+	    }
+	    .noUi-handle {
+			border-radius: 50%;
+			border: 1px solid #2995E1;
+			background: #2995E1;
+			cursor: default;
+			box-shadow: 0 2px 8px 0 rgba(30,131,202,0.80);
+	    }
+	    .noUi-handle:after,
+	    .noUi-handle:before {
+	        display: none;
+	    }
+	}
+}
+
+
+//Calendar Style
+.ad-a-house__calendar {
+	.flatpickr-calendar {
+		width: 100%;
+		.flatpickr-months {
+			padding: 10px 0;
+			.flatpickr-prev-month, 
+			.flatpickr-next-month {
+				top: 3px;
+				svg {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+	.flatpickr-rContainer {
+		width: 100%;
+		.flatpickr-weekdays {
+			margin-top: 10px;
+			.flatpickr-weekday {
+				width: 14.2857143%;
+				font-size: 15px;
+				font-weight: 600;
+				color: #2A96E0;
+			}
+		}
+		
+		.flatpickr-days {
+			width: 100%;
+			margin-top: 10px;
+			.dayContainer {
+				width: 100%;
+				min-width: 100%;
+				.flatpickr-day {
+					max-width: 14.2857143%;
+					border-radius: 0;
+					&.today {
+						background-image: linear-gradient(-140deg, #2694E1 0%, #58A7D7 100%);
+						box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+						border: 1px solid transparent;
+						color: #FFFFFF;
+						&:hover {
+							color: #FFFFFF;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:576px) {
+    .ad-a-house {
+		&__step1-frame {
+			width: 400px;
+		}
+		&__map {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width:400px) {
+    .ad-a-house {
+		&__step1-frame {
+			width: 300px;
+		}
+	}
+}

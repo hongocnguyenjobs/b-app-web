@@ -1,0 +1,19 @@
+.payment-history {
+	&__avatar {
+		width: 60px;
+		height: 60px;
+	}
+	&__text1 {
+		font-size: 13px;
+		color: #9FAFBE;
+	}
+	&__text2 {
+		font-size: 24px;
+		color: #122D47;
+	}
+	&__card {
+		background: #F1F6FB;
+		border: 1px solid #C4D6E2;
+		border-radius: 8px;
+	}
+}

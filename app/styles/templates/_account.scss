@@ -1,0 +1,109 @@
+.account{
+    &__title{
+        font-size: 36px;
+        color: #ffffff;
+        font-weight: 700;
+    }
+    &__title-2{
+        font-size: 36px;
+        color: #FFFFFF;
+        line-height: 40px;
+    }
+    &__text-1{
+        font-size: 15px;
+        color: #FFFFFF;
+        line-height: 25px;
+    }
+    &__text-2{
+        font-size: 15px;
+        color: #8EC6E9;
+        line-height: 25px;
+    }
+    &__text-3{
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 28px;
+        padding-bottom: 10px;
+        background-color: rgba(142, 198, 233, 0);
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        outline:0 !important;
+    }
+    &__link{
+        font-size: 15px;
+        color: #FFFFFF;
+        text-decoration: underline;
+        &:hover{
+            color: rgb(1, 1, 106);
+        }
+    }
+    &__btn-pwd{
+        background-color: rgba(142, 198, 233, 0);
+        border: none;
+        right:0px;
+        top:0px;
+    }
+    &__step{
+        display: flex;
+    }
+    &__line {
+        width: 1px;
+        height: 280px;
+        background: #668CAE;
+        top: 20px;
+        left: 32px;
+    }
+    &__step{
+        position: relative;
+    }
+    &__step-item-title{
+        font-size: 15px;
+        color: #8EC6E9;
+        margin-top: 7px;
+        margin-left: 15px;
+    }
+    &__step-item-circle {
+        width: 35px;
+        height: 35px;
+        background: #648AAD;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #8EC6E9 ;
+    }
+    .m-done {
+        .account__step-item-circle {
+            background-image: linear-gradient(-140deg, #2694E1 0%, #58A7D7 100%);
+            color: #F6F6F6 ;
+        }
+    }
+    .m-active {
+        .account__step-item-title{
+            color: #ffffff;
+        }
+        .account__step-item-circle {
+            background-image: linear-gradient(-140deg, #2694E1 0%, #58A7D7 100%);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+            color: #FFFFFF;
+        }
+    }
+    &__item-checkbox:checked+.account__item-status {
+        background-color: #2A96E0;
+        background-image: url(../images/ic-checkbox.svg);
+        background-size: contain;
+        background-position: center center;
+    }
+    &__item-status {
+        width: 23px;
+        height: 23px;
+        border: 1px solid #2A96E0;
+        border-radius: 3px;
+    }
+    textarea{
+        background: #FFFFFF;
+        border-radius: 4px;
+        resize: none;
+    }
+
+}

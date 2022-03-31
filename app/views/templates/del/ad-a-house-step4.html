@@ -1,0 +1,23 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    <main class="m-height-screen">
+        <div class="ad-a-house__step1-frame m-auto pt-5">
+            <p class="ad-a-house__text4 text-uppercase">Add photos and description</p>
+            <p class="ad-a-house__text1">Add your profile photo</p>
+            <div class="ad-a-house__frame-profile-photo rounded-circle d-flex justify-content-center align-items-end mx-auto position-relative" style="background:url(images/ic-no-avatar.svg) bottom center / 285px 285px no-repeat #EDEFF2;">
+                <label class="d-flex justify-content-center align-items-center position-absolute rounded-circle ad-a-house__frame-profile-photo--btn-upload">
+                    <input class="d-none" type="file">
+                    <img src="images/ic-take-photo.svg" width="26px" height="22px">
+                </label>
+            </div>
+            <div class="form-group mt-5">
+                <label class="ad-a-house__text5" for="ad-a-house-step3__textarea">Tell us about the you</label>
+                <textarea class="form-control pt-2 pl-3" id="ad-a-house-step3__textarea" rows="4" placeholder="Enter..."></textarea>
+            </div>
+            <a href="" class="m-btn2 m-btn-confirm1 btn-block text-center mt-4">Continue</a>
+            <a href="" class="btn-block text-center ad-a-house__link1 my-5">Save and exit</a>
+        </div>
+        <a href=""><img class="ad-a-house__btn-close-on-white-board" src="images/ic-close.svg"></a>
+    </main>
+</div>
+@include('../partials/foot.html')

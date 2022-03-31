@@ -1,0 +1,21 @@
+.manage-bar{
+    &__link {
+        display: block;
+        padding: 18px 0px;
+        font-size: 15px;
+        color: #122D47;
+        line-height: 25px;
+        font-weight: 500;
+        &:hover {
+            text-decoration: none;
+            color: #2995E1;
+        }
+    }
+    &__body {
+        list-style: none;
+    }
+    .m-active {
+        font-weight: 700;
+        color: #2995E1;
+    }
+}

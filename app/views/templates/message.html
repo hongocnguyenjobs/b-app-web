@@ -1,0 +1,341 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    @include('../partials/header.html')
+    <main class="message h-100">
+        <div class="container pb-5">
+            <div class="row  mb-5">
+                <div class="col-3 col-md-2 col-lg-4 pt-4">
+                    <div class="message__search d-none d-lg-block mb-4">
+                        <input id="messageInputSearch" class="w-100 p-2 form-control" type="text" name="search" placeholder="Search...">
+                    </div>
+                    <div class="message__sidebar">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="message__userName nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#user1" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <div class="message__user row mx-0">
+                                    <!--  -->
+                                    <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center px-0">
+                                        <div class="message__avatar" style="background: url(images/message1.png) center center/cover;">
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="message__text px-1 d-none d-lg-block col-lg-7">
+                                        <p class="mb-1 message__text1 active">Rosa Sherman<span class="message__active ml-1"></span></p>
+                                        <p class="mb-0 message__text2 active">Thanks for being so quick with...</p>
+                                    </div>
+                                    <!--  -->
+                                    <div class="col-lg-2 d-none d-lg-block">
+                                        <p class="message__text3 mb-1">14:47</p>
+                                        <p class="message__more text-right"><span class="badge badge-pill badge-primary message__textBadge">2</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="message__userName nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#user2" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                <div class="message__user row mx-0">
+                                    <!--  -->
+                                    <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center px-0">
+                                        <div class="message__avatar" style="background: url(images/message2.png) center center/cover;"></div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="message__text px-1 d-none d-lg-block col-lg-6">
+                                        <p class="mb-1 message__text1">Sara Phillips</p>
+                                        <p class="mb-0 message__text2">What are of the house</p>
+                                    </div>
+                                    <!--  -->
+                                    <div class="col-lg-3 d-none d-lg-block">
+                                        <p class="message__text3 mb-1">Sat</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="message__userName nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#user3" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                <div class="message__user row mx-0">
+                                    <!--  -->
+                                    <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center px-0">
+                                        <div class="message__avatar" style="background: url(images/message3.png) center center/cover;"></div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="message__text px-1 d-none d-lg-block col-lg-6">
+                                        <p class="mb-1 message__text1">Nora Page</p>
+                                        <p class="mb-0 message__text2">Thanks for being so quick with answer</p>
+                                    </div>
+                                    <!--  -->
+                                    <div class="col-lg-3 d-none d-lg-block">
+                                        <p class="message__text3 mb-1">Thu</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="message__userName nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#user4" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <div class="message__user row mx-0">
+                                    <!--  -->
+                                    <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center px-0">
+                                        <div class="message__avatar" style="background: url(images/message1.png) center center/cover;"></div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="message__text px-1 d-none d-lg-block col-lg-7">
+                                        <p class="mb-1 message__text1">Rosa Sherman<span class="message__active ml-1"></span></p>
+                                        <p class="mb-0 message__text2">Thanks for being so quick with...</p>
+                                    </div>
+                                    <!--  -->
+                                    <div class="col-lg-2 d-none d-lg-block">
+                                        <p class="message__text3 mb-1">14:47</p>
+                                        <p class="message__more text-right"><span class="badge badge-pill badge-primary message__textBadge">2</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-md-10 col-lg-8 message__borderBlue border-top-0">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="user1" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="message__status d-flex align-items-center w-100">
+                                <div class=" pt-3 px-3">
+                                    <p class="message__text5 mb-1">Rosa Sherman</p>
+                                    <p class="mb-2">
+                                        <span class="message__active ml-1"></span>
+                                        <label class="message__text2">Online</label>
+                                    </p>
+                                </div>
+                                <div class="dropdown ml-auto mr-3">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="images/ic-menu.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                <a href="#" class=""></a>
+                            </div>
+                            <div class="message__content">
+                                <div class="align-items-center">
+                                    <div class="message__title d-flex align-items-center">
+                                        <span class="message__line-left"></span>
+                                        <span class="text-center message__text2 message__line-middle">June 21</span>
+                                        <span class="message__line-right"></span>
+                                    </div>
+                                    <p class="mb-2">
+                                        <span class="badge p-3 message__textChat1">Hello</span>
+                                    </p>
+                                    <p class="mb-1">
+                                        <span class="badge p-3 message__textChat1">What area of the house?</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge message__text2 mt-0">2:00 pm</span>
+                                    </p>
+                                    <p class="text-right mb-1">
+                                        <span class="badge p-3 message__textChat2">Dummy text is text that is used in the publishing industry or by web designers</span>
+                                    </p>
+                                    <p class="text-right">
+                                        <span class="badge message__text2">2:05 pm</span>
+                                    </p>
+                                </div>
+                                <div class="align-items-center">
+                                    <div class="message__title d-flex align-items-center">
+                                        <span class="message__line-left"></span>
+                                        <span class="text-center message__text2 message__line-middle">June 23</span>
+                                        <span class="message__line-right"></span>
+                                    </div>
+                                    <p class="mb-1">
+                                        <span class="badge p-3 message__textChat1">Thank you</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge message__text2 mt-0">10:00 pm</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="user2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="message__status d-flex align-items-center w-100">
+                                <div class=" pt-3 px-3">
+                                    <p class="message__text5 mb-1">Sara Phillips</p>
+                                    <p class="mb-2">
+                                        <span class="message__active ml-1"></span>
+                                        <label class="message__text2">Offline</label>
+                                    </p>
+                                </div>
+                                <div class="dropdown ml-auto mr-3">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="images/ic-menu.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                <a href="#" class=""></a>
+                            </div>
+                            <div class="message__content">
+                                <div class="align-items-center">
+                                    <div class="message__title d-flex align-items-center">
+                                        <span class="message__line-left"></span>
+                                        <span class="text-center message__text2 message__line-middle">June 21</span>
+                                        <span class="message__line-right"></span>
+                                    </div>
+                                    <p class="mb-2">
+                                        <span class="badge p-3 message__textChat1">Hello</span>
+                                    </p>
+                                    <p class="mb-1">
+                                        <span class="badge p-3 message__textChat1">What area of the house?</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge message__text2 mt-0">2:00 pm</span>
+                                    </p>
+                                    <p class="text-right mb-1">
+                                        <span class="badge p-3 message__textChat2">Dummy text is text that is used in the publishing industry or by web designers</span>
+                                    </p>
+                                    <p class="text-right">
+                                        <span class="badge message__text2">2:05 pm</span>
+                                    </p>
+                                </div>
+                                <div class="align-items-center">
+                                    <div class="message__title d-flex align-items-center">
+                                        <span class="message__line-left"></span>
+                                        <span class="text-center message__text2 message__line-middle">June 23</span>
+                                        <span class="message__line-right"></span>
+                                    </div>
+                                    <p class="mb-1">
+                                        <span class="badge p-3 message__textChat1">Thank you</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge message__text2 mt-0">10:00 pm</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="user3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="message__status d-flex align-items-center w-100">
+                                <div class=" pt-3 px-3">
+                                    <p class="message__text5 mb-1">Nora Page</p>
+                                    <p class="mb-2">
+                                        <span class="message__active ml-1"></span>
+                                        <label class="message__text2">Offline</label>
+                                    </p>
+                                </div>
+                                <div class="dropdown ml-auto mr-3">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="images/ic-menu.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                <a href="#" class=""></a>
+                            </div>
+                            <div class="message__content">
+                                <div class="align-items-center">
+                                    <div class="message__title d-flex align-items-center">
+                                        <span class="message__line-left"></span>
+                                        <span class="text-center message__text2 message__line-middle">June 21</span>
+                                        <span class="message__line-right"></span>
+                                    </div>
+                                    <p class="mb-2">
+                                        <span class="badge p-3 message__textChat1">Hello</span>
+                                    </p>
+                                    <p class="mb-1">
+                                        <span class="badge p-3 message__textChat1">What area of the house?</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge message__text2 mt-0">2:00 pm</span>
+                                    </p>
+                                    <p class="text-right mb-1">
+                                        <span class="badge p-3 message__textChat2">Dummy text is text that is used in the publishing industry or by web designers</span>
+                                    </p>
+                                    <p class="text-right">
+                                        <span class="badge message__text2">2:05 pm</span>
+                                    </p>
+                                </div>
+                                <div class="align-items-center">
+                                    <div class="message__title d-flex align-items-center">
+                                        <span class="message__line-left"></span>
+                                        <span class="text-center message__text2 message__line-middle">June 23</span>
+                                        <span class="message__line-right"></span>
+                                    </div>
+                                    <p class="mb-1">
+                                        <span class="badge p-3 message__textChat1">Thank you</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge message__text2 mt-0">10:00 pm</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="user4" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="message__status d-flex align-items-center w-100">
+                                <div class=" pt-3 px-3">
+                                    <p class="message__text5 mb-1">Rosa Sherman</p>
+                                    <p class="mb-2">
+                                        <span class="message__active ml-1"></span>
+                                        <label class="message__text2">Offline</label>
+                                    </p>
+                                </div>
+                                <div class="dropdown ml-auto mr-3">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="images/ic-menu.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                <a href="#" class=""></a>
+                            </div>
+                            <div class="message__content">
+                                <div class="align-items-center">
+                                    <div class="message__title d-flex align-items-center">
+                                        <span class="message__line-left"></span>
+                                        <span class="text-center message__text2 message__line-middle">June 21</span>
+                                        <span class="message__line-right"></span>
+                                    </div>
+                                    <p class="mb-2">
+                                        <span class="badge p-3 message__textChat1">Hello</span>
+                                    </p>
+                                    <p class="mb-1">
+                                        <span class="badge p-3 message__textChat1">What area of the house?</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge message__text2 mt-0">2:00 pm</span>
+                                    </p>
+                                    <p class="text-right mb-1">
+                                        <span class="badge p-3 message__textChat2">Dummy text is text that is used in the publishing industry or by web designers</span>
+                                    </p>
+                                    <p class="text-right">
+                                        <span class="badge message__text2">2:05 pm</span>
+                                    </p>
+                                </div>
+                                <div class="align-items-center">
+                                    <div class="message__title d-flex align-items-center">
+                                        <span class="message__line-left"></span>
+                                        <span class="text-center message__text2 message__line-middle">June 23</span>
+                                        <span class="message__line-right"></span>
+                                    </div>
+                                    <p class="mb-1">
+                                        <span class="badge p-3 message__textChat1">Thank you</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge message__text2 mt-0">10:00 pm</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message__input col-lg-8 col-10 offset-lg-4 offset-2 message__borderBlue border-top-0 py-3 px-2 pt-2">
+                    <textarea rows="2" class="border-0" type="text" name="" placeholder="Write a message or attach a file..."></textarea>
+                    <div class="message__attach d-inline-block">
+                        <label for="message__fileInput">
+                            <img src="images/ic-attach.svg" alt="message attach">
+                        </label>
+                        <input type="file" id="message__fileInput" name="" class="d-none">
+                    </div>
+                    <div class="message__showFile message__text2">avatar.jpg</div>
+                </div>
+            </div>
+    </main>
+    @include('../partials/footer.html')
+    </div>
+    @include('../partials/foot.html')

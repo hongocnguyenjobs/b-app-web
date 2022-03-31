@@ -1,0 +1,21 @@
+.detail-house__owl-carousel {
+	height: 650px;
+	position: relative;
+	.owl-stage-outer,
+	.owl-stage,
+	.owl-item,
+	.item {
+		height: 100% !important;
+	}
+	.owl-dots {
+		position: absolute;
+		bottom: 15px;
+		left: 20%;
+		.owl-dot.active span {
+			background-color: #FFFFFF;
+		}
+		.owl-dot span {
+			background-color: #869791;
+		}
+	}
+}

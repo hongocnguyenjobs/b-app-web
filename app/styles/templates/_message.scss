@@ -1,0 +1,188 @@
+.message {
+    &__linkUser:hover {
+        text-decoration: none;
+        .message__user {
+            background-color: #F6F7F9;
+        }
+    }
+    &__search input {
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #C4D6E2;
+        border-radius: 3px;
+        background: url(../images/ic-search.svg) no-repeat scroll 10px 12px;
+        padding-left: 30px !important;
+    }
+    &__avatar {
+        width: 60px;
+        height: 60px;
+    }
+    &__text1 {
+        font-size: 15px;
+        color: #425A71;
+        line-height: 25px;
+        font-weight: 600;
+        &.active {
+            color: #2995E1;
+        }
+        &.active:after {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #07C821;
+            border-radius: 50%;
+        }
+    }
+    &__text2 {
+        font-size: 13px;
+        color: #9FAFBE;
+        line-height: 18px;
+        &.active {
+            color: #425A71;
+        }
+    }
+    &__text3 {
+        font-size: 15px;
+        color: #425A71;
+        text-align: right;
+        line-height: 25px;
+    }
+    &__text4 {
+        font-size: 13px;
+        color: #FFFFFF;
+        line-height: 18px;
+    }
+    &__textBadge {
+        font-size: 13px;
+        color: #FFFFFF;
+        line-height: 18px;
+    }
+    &__text5 {
+        font-size: 18px;
+        color: #122D47;
+        line-height: 28px;
+        font-weight: 600;
+    }
+    &__text6 {
+        font-size: 13px;
+        color: #425A71;
+        line-height: 18px;
+    }
+    &__textChat1 {
+        font-size: 15px;
+        color: #122D47;
+        line-height: 25px;
+        background: #F1F5F8;
+        text-align: left !important;
+        white-space: normal !important;
+        word-wrap: break-word;
+    }
+    &__textChat2 {
+        font-size: 15px;
+        color: #FFFFFF;
+        line-height: 25px;
+        background: #1C9FF1;
+        text-align: right !important;
+        white-space: normal !important;
+        word-wrap: break-word;
+    }
+    &__borderBlue {
+        border: 1px solid #C4D6E2;
+    }
+    &__line-right {
+        display: block;
+        width: 50%;
+        height: 1px;
+        background-image: linear-gradient(-90deg, #FFFFFF 0%, #C4D6E2 100%);
+    }
+    &__line-left {
+        display: block;
+        width: 50%;
+        height: 1px;
+        background-image: linear-gradient(90deg, #FFFFFF 0%, #C4D6E2 100%);
+    }
+    &__line-middle {
+        width: 75px;
+    }
+    &__input textarea {
+        position: relative;
+        width: 100%;
+        padding-right: 40px !important;
+    }
+    &__input textarea::placeholder {
+        font-size: 15px;
+        color: #9FAFBE;
+        line-height: 25px;
+    }
+    &__attach {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 14px;
+    }
+    &__attach label {
+        cursor: pointer;
+    }
+    &__showFile {
+        position: absolute;
+        bottom: 13px;
+        left: 13px;
+    }
+    &__sidebar {
+        height: 65vh;
+        overflow-y: auto;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+        }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #1C9FF1; 
+            border-radius: 10px;
+        }
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #1C9FF1; 
+        }
+        .nav-link.active {
+            background-color:rgba(0, 0, 0, .05)
+        }
+    }
+    &__user {
+        width: 98%;
+    }
+    &__content {
+        height: 62vh;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+        }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #1C9FF1; 
+            border-radius: 10px;
+        }
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #1C9FF1; 
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .message__avatar {
+        width: 40px;
+        height: 40px;
+    }
+}

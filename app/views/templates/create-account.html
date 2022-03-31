@@ -1,0 +1,237 @@
+@include('../partials//head.html')
+<div class="wrapper">
+    <main class="account" style="background:url(images/bg.png) center center / cover">
+        <div class="m-mask-blue position-relative">
+            <div class="m-height-screen d-flex  justify-content-center">
+                <div class="container mt-4 pt-2">
+                    <div class="d-flex justify-content-between">
+                        <a href=""><img src="images/logo-small.png"alt=""></a>
+                        <a href=""><img src="images/close.svg" alt=""></a>
+                    </div>
+                    <div class="mx-0 mx-sm-3 mx-lg-5 my-5">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-5 pr-0 position__relative">
+                                <div class="account__line position-absolute">
+                                </div>
+                                <div class="account__step account__step1 m-active">
+                                    <div class="account__step-item-circle rounded-circle">1</div>
+                                    <p class="account__step-item-title">Your information</p>
+                                </div>
+                                <div class="account__step account__step2">
+                                    <div class="account__step-item-circle rounded-circle">2</div>
+                                    <p class="account__step-item-title">Enable notifications</p>
+                                </div>
+                                <div class="account__step account__step3">
+                                    <div class="account__step-item-circle rounded-circle">3</div>
+                                    <p class="account__step-item-title">Before join</p>
+                                </div class="account__step">
+                                <div class="account__step account__step4">
+                                    <div class="account__step-item-circle rounded-circle">4</div>
+                                    <p class="account__step-item-title">What are you interested in? </p>
+                                </div>
+                                <div class="account__step account__step5">
+                                    <div class="account__step-item-circle rounded-circle">5</div>
+                                    <p class="account__step-item-title" >Type of ads</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6">
+                                <div id="createAccount1">
+                                    <p class="account__text-1 mb-1 text-uppercase">Create an account</p>
+                                    <p class="account__title-2 mt-2 mb-4">Your information</p>
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <p class="account__text-2 mb-1">Name</p>
+                                            <input class="d-block w-100 account__text-3 mb-1" type="text">
+                                            <div class="m-valid-feedback d-none">
+                                                Please enter your name
+                                            </div>
+                                            <div class="m-invalid-feedback">
+                                                Please enter your name
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="account__text-2 mb-1">Surename</p>
+                                            <input class="d-block w-100 account__text-3 mb-1" type="text">
+                                            <div class="m-valid-feedback d-none">
+                                                Please enter your Surename
+                                            </div>
+                                            <div class="m-invalid-feedback d-none">
+                                                Please enter your Surename
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="account__text-2 mb-1">Email</p>
+                                        <input class="d-block w-100 account__text-3 mb-1" type="text">
+                                        <div class="m-valid-feedback d-none">
+                                            Please enter your Email
+                                        </div>
+                                        <div class="m-invalid-feedback">
+                                            Please enter your Email
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="account__text-2 mb-1">Password</p>
+                                        <div class="position-relative">
+                                            <input class="d-block w-100 account__text-3" id="pass" type="password">
+                                            <button id="showPass" class="account__btn-pwd position-absolute"><img src="images/ic-show-pass.svg" alt=""></button>
+                                            <div class="m-valid-feedback d-none">
+                                                Please enter your Email
+                                            </div>
+                                            <div class="m-invalid-feedback">
+                                                Please enter your Password
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <label class="d-flex align-items-center">
+                                        <input class="d-none account__item-checkbox" type="checkbox">
+                                        <div class="account__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="account__text-2">I want to receive notifications to my e-mail</span>
+                                        </div>
+                                    </label>
+                                    <div class="text-center">
+                                        <a href="#createAccount2" onclick="showStep2()" class="d-block m-btn m-btn-blue my-3">Next</a>
+                                    </div>
+                                </div>
+                                <div id="createAccount2">
+                                    <p class="account__text-1 mb-1 text-uppercase">Create an account</p>
+                                    <p class="account__title-2 mt-2 mb-4">Enable notification</p>
+                                    <textarea class="w-100 mb-3" rows="7"></textarea>
+                                    <p class="account__text-2 mb-4">We will inform you once someone sends you a message, or notify about other important actions on your account</p>
+                                    <div class="row text-center">
+                                        <div class="col-6">
+                                            <a href="" class="d-block m-btn m-btn-white">Skip</a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#createAccount3" onclick="showStep3()" class="d-block m-btn m-btn-blue">I agree</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="createAccount3">
+                                    <p class="account__text-1 mb-1 text-uppercase">Create an account</p>
+                                    <p class="account__title-2 mt-2 mb-4">Before you join</p>
+                                    <p class="account__text-2 mb-4">In mi diam, pellentesque sit amet aliquet sed, tristique ut enim. Cras eget dui at massa vulputate pulvinar. Curabitur et posuere felis. Mauris volutpat eu magna non blandit. In tellus quam, tincidunt gravida varius ac, imperdiet eget est.</p>
+                                    <p class="account__text-2 mb-4">Vestibulum sodales consequat turpis ultricies mattis. Nullam eu diam vel mi aliquet condimentum nec et neque. Nullam pretium tincidunt pharetra. Fusce sed dapibus sem. Donec egestas elementum sem et vulputate.</p>
+                                    <div class="row text-center">
+                                        <div class="col-6">
+                                            <a href="" class="d-block m-btn m-btn-white">Decline</a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#createAccount4" onclick="showStep4()" class="d-block m-btn m-btn-blue">Accpect</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="createAccount4">
+                                    <p class="account__text-1 mb-1 text-uppercase">Create an account</p>
+                                    <p class="account__title-2 mt-2 mb-4">What are you interested in? </p>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <label class="m-check-radio-blue mr-5">
+                                            <input class="m-check-radio-blue__input" type="radio" name="type" checked required>
+                                            <span class="m-check-radio-blue__status"></span>
+                                            <span class="m-check-radio-blue__text">Advertise</span>
+                                        </label>
+                                        <label class="m-check-radio-blue">
+                                            <input class="m-check-radio-blue__input" type="radio" name="type" required>
+                                            <span class="m-check-radio-blue__status"></span>
+                                            <span class="m-check-radio-blue__text">Search for an ad</span>
+                                        </label>
+                                    </div>
+                                    <textarea class="w-100 mb-3" rows="7"></textarea>
+                                    <p class="account__text-2 mb-4">I want to give an ad for my business</p>
+                                    <div class="text-center">
+                                        <a  href="#createAccount5" onclick="showStep5()" class="d-block m-btn m-btn-blue my-3">Next</a>
+                                    </div>
+                                </div>
+                                <div id="createAccount5">
+                                    <p class="account__text-1 mb-1 text-uppercase">Create an account</p>
+                                    <p class="account__title-2 mt-2 mb-4">What type of ads are you want to submit?</p>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <label class="m-check-radio-blue mr-5">
+                                            <input class="m-check-radio-blue__input" type="radio" name="type" checked required>
+                                            <span class="m-check-radio-blue__status"></span>
+                                            <span class="m-check-radio-blue__text">Add and ad</span>
+                                        </label>
+                                        <label class="m-check-radio-blue">
+                                            <input class="m-check-radio-blue__input" type="radio" name="type" required>
+                                            <span class="m-check-radio-blue__status"></span>
+                                            <span class="m-check-radio-blue__text">Add a house</span>
+                                        </label>
+                                    </div>
+                                    <textarea class="w-100 mb-3" rows="7"></textarea>
+                                    <p class="account__text-1 mb-1">Rent a house for advertising</p>
+                                    <p class="account__text-2 mb-4">We will inform you once someone sends</p>
+                                    <div class="text-center">
+                                        <a href="" class="d-block m-btn m-btn-blue my-3">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+@include('../partials/foot.html')
+
+<script>
+    $('#createAccount2').hide();
+    $('#createAccount3').hide();
+    $('#createAccount4').hide();
+    $('#createAccount5').hide();
+    var link=window.location.href;
+    var getLinkIdStep = link.split("#")[1];
+    if(getLinkIdStep == "createAccount2") {
+        $('#createAccount1').hide();
+        $('#createAccount2').show();
+        $('.account__step1').removeClass("m-active").addClass("m-done");
+        $('.account__step2').addClass("m-active");
+    }
+    if(getLinkIdStep == "createAccount3") {
+        $('#createAccount1').hide();
+        $('#createAccount3').show();
+        $('.account__step2').addClass("m-done");
+        $('.account__step3').addClass("m-active");
+    }
+    if(getLinkIdStep == "createAccount4") {
+        $('#createAccount1').hide();
+        $('#createAccount4').show();
+        $('.account__step2').addClass("m-done");
+        $('.account__step3').addClass("m-done");
+        $('.account__step4').addClass("m-active");
+    }
+    if(getLinkIdStep == "createAccount5") {
+        $('#createAccount1').hide();
+        $('#createAccount5').show();
+        $('.account__step2').addClass("m-done");
+        $('.account__step3').addClass("m-done");
+        $('.account__step4').addClass("m-done");
+        $('.account__step5').addClass("m-active");
+    }
+    function showStep2() {
+        $('#createAccount1').hide();
+        $('#createAccount2').show();
+        $('.account__step1').removeClass("m-active").addClass("m-done");
+        $('.account__step2').addClass("m-active");
+    }
+    function showStep3() {
+        $('#createAccount2').hide();
+        $('#createAccount3').show();
+        $('.account__step2').removeClass("m-active").addClass("m-done");
+        $('.account__step3').addClass("m-active");
+    }
+    function showStep4() {
+        $('#createAccount3').hide();
+        $('#createAccount4').show();
+        $('.account__step3').removeClass("m-active").addClass("m-done");
+        $('.account__step4').addClass("m-active");
+    }
+    function showStep5() {
+        $('#createAccount4').hide();
+        $('#createAccount5').show();
+        $('.account__step4').removeClass("m-active").addClass("m-done");
+        $('.account__step5').addClass("m-active");
+    }
+</script>
